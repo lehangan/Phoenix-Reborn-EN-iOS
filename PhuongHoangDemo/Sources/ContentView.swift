@@ -32,7 +32,7 @@ private struct GameView: UIViewRepresentable {
         let web = WKWebView(frame: .zero, configuration: config)
         web.navigationDelegate = context.coordinator
         web.scrollView.contentInsetAdjustmentBehavior = .never
-        web.load(URLRequest(url: URL(string: "phoenix://game/index.html")!))
+        web.load(URLRequest(url: URL(string: "phoenix://game/game/index.html")!))
         return web
     }
     func updateUIView(_ web: WKWebView, context: Context) {}
@@ -46,9 +46,19 @@ private final class GameCoordinator: NSObject, WKURLSchemeHandler, WKScriptMessa
     func webView(_ webView: WKWebView, start task: WKURLSchemeTask) {
         guard let url = task.request.url,
               let root = Bundle.main.resourceURL?.appendingPathComponent("GameAssets/game") else { return }
-        let path = url.path == "/" ? "index.html" : String(url.path.dropFirst())
+        // HTML keeps the web base /game/. Map it once to the bundled game directory.
+        let requestedPath = url.path
+        let path: String
+        if requestedPath == "/" || requestedPath == "/game/" {
+            path = "index.html"
+        } else if requestedPath.hasPrefix("/game/") {
+            path = String(requestedPath.dropFirst("/game/".count))
+        } else {
+            path = String(requestedPath.dropFirst())
+        }
         let file = root.appendingPathComponent(path).standardizedFileURL
         guard file.path.hasPrefix(root.path + "/"), let data = try? Data(contentsOf: file) else {
+            NSLog("Phoenix bundled asset missing: %@", url.path)
             task.didFailWithError(NSError(domain: NSURLErrorDomain, code: NSURLErrorFileDoesNotExist)); return
         }
         let ext = file.pathExtension.lowercased()
@@ -67,3 +77,4 @@ private final class GameCoordinator: NSObject, WKURLSchemeHandler, WKScriptMessa
         decisionHandler(.cancel)
     }
 }
+
