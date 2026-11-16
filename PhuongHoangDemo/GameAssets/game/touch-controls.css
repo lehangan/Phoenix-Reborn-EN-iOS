@@ -1,0 +1,6 @@
+/* Keep native scrolling and two-finger pinch zoom, without tap-to-zoom.
+ * Apply at every hit target, including nested scroll areas and modal content.
+ * Zero specificity lets mini-game drag/drawing surfaces keep their own policy. */
+:where(html, body, body *) {
+  touch-action: manipulation;
+}

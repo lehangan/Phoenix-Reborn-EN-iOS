@@ -1,0 +1,9 @@
+// Individually generated chiffon dresses and peony ornaments, classified with the same luxury thresholds as the existing catalog.
+const names=["Sương Mai Lụa Ngọc", "Đào Phấn Khinh Sa", "Lam Vũ Thanh Y", "Tử Đằng Sương Mỏng", "Trúc Ảnh Thanh Sa", "Hoàng Mai Nhu Vân", "Bích Liên Vân Y", "Hồng Nguyệt La Thường", "Ngân Hạc Vân Lam", "Ngọc Lan Tuyết Y", "Hải Đường Phấn Lệ", "Uyển Bích Hồ Điệp", "Tử Hà Châu Sa", "Lưu Ly Vân Cẩm", "Phù Dung Ngọc Sương", "Kim Quế Nguyệt Hoa", "Phượng Vũ Hồng Sa", "Cửu Hoa Bích Ngọc", "Thiên Vân Ngân Phượng", "Dao Trì Kim Liên"];
+const robeLuxury=[18, 23, 28, 35, 38, 43, 48, 53, 58, 63, 67, 71, 75, 79, 83, 87, 91, 94, 97, 100];
+const ranks=[0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,9,9,7,9];
+const rarityFor=n=>n<25?0:n<50?1:n<75?2:3;
+export const NEW_ROBES=names.map((name,k)=>{const rankGrant=ranks[k],luxury=robeLuxury[k],rarity=rarityFor(luxury);return {id:'robe-'+(50+k),type:'robe',index:50+k,name,rankGrant,rarity,luxury,unlock:'chest',source:'Sắc phong cùng phẩm vị / rương báu',beauty:[1,4,8,13][rarity],art:[0,2,5,9][rarity]};});
+const flowerNames=["Mẫu Đơn Hồng Ngọc", "Mẫu Đơn Bạch Châu", "Mẫu Đơn Tử Điệp", "Mẫu Đơn Thanh Ngọc", "Mẫu Đơn Kim Sa", "Mẫu Đơn Lam Nguyệt", "Mẫu Đơn Đào Sương", "Mẫu Đơn Xích Phượng", "Mẫu Đơn Nguyệt Quế", "Mẫu Đơn Dạ Tinh", "Mẫu Đơn Bích Hải", "Mẫu Đơn Hồng Vân", "Mẫu Đơn Lưu Ly", "Mẫu Đơn Hoàng Kim", "Mẫu Đơn Tuyết Tím", "Mẫu Đơn Trầm Hương", "Mẫu Đơn Ngọc Lan", "Mẫu Đơn Cẩm Tú", "Mẫu Đơn Hổ Phách", "Mẫu Đơn Ngũ Sắc"];
+const flowerLuxury=[64, 68, 70, 72, 66, 76, 62, 86, 78, 90, 74, 67, 81, 92, 69, 79, 77, 95, 73, 98];
+export const NEW_ORNAMENTS=flowerNames.map((name,k)=>{const luxury=flowerLuxury[k],rarity=rarityFor(luxury);return {id:'hair-'+(50+k),type:'hair',index:50+k,name,rarity,luxury,unlock:'chest',source:'Ban thưởng / rương báu',beauty:[1,3,6,10][rarity],art:[0,1,3,6][rarity]};});

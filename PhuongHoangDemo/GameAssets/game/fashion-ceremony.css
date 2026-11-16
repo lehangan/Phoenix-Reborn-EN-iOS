@@ -1,0 +1,50 @@
+/* The waiting rows, recipient and reward have separate places in the court. */
+.fashion-ceremony .fashion-cg-heading{top:max(24px,env(safe-area-inset-top))}
+.fashion-ceremony .fashion-cg-dialogue{top:13%;font-size:clamp(14px,3.65vw,18px);line-height:1.48;left:7%;right:7%;text-align:left;max-height:18%;overflow:auto;scrollbar-width:thin}
+.fashion-ceremony .fashion-cg-dialogue small{display:block;text-align:center}
+.fashion-ceremony .fashion-cg-dialogue p{animation:fashion-caption-in .65s both}
+.fashion-ceremony-scene:after{background:linear-gradient(#30101bc9,#30101b99 26%,transparent 35%,transparent 91%,#240b1755)!important}
+.fashion-cg .fashion-award-person{left:var(--start-x);bottom:var(--start-bottom);width:24%;height:17%;z-index:4}
+.fashion-cg .fashion-award-person.award-front-row{z-index:5}
+.fashion-cg .fashion-award-person.in-final-line{left:var(--line-x);bottom:42%;height:17%;z-index:5}
+.fashion-cg .fashion-award-person.is-gather{animation:fashion-award-gather 1.6s ease-in-out both}
+.fashion-cg .fashion-award-person.is-call{--from-x:var(--start-x);--from-bottom:var(--start-bottom);--from-height:17%;left:50%;bottom:22%;width:28%;height:20%;z-index:9;animation:fashion-award-approach 1.6s ease-in-out both}
+.fashion-cg .fashion-award-person.in-final-line.is-call{--from-x:var(--line-x);--from-bottom:42%;--from-height:17%}
+.fashion-cg .fashion-award-person.is-award,.fashion-cg .fashion-award-person.is-winner,.fashion-cg .fashion-award-person.is-depart{left:50%;bottom:22%;width:28%;height:20%;z-index:9}
+.fashion-cg .fashion-award-person.is-depart{animation:fashion-award-leave 1.6s ease-in-out both}
+.fashion-award-person.is-award>.character,.fashion-award-person.is-winner>.character{filter:drop-shadow(0 0 9px #ffe5a650)}
+.fashion-cg .fashion-emperor{left:50%;bottom:-5%;height:25%;width:33%;z-index:12}
+.fashion-cg .fashion-award-person figcaption{font-size:8px;line-height:1.25;padding:2px 3px;max-width:94%;border-radius:2px}
+.fashion-cg .fashion-award-person.is-award figcaption,.fashion-cg .fashion-award-person.is-call figcaption,.fashion-cg .fashion-award-person.is-winner figcaption{font-size:9px;max-width:110%}
+/* Keep the entrance speeches on the same stage as the award sequence. */
+.fashion-cg .fashion-back-row{--person-bottom:53%!important;--person-height:17%!important;--person-width:24%!important}
+.fashion-cg .fashion-front-row{--person-bottom:34%!important;--person-height:17%!important;--person-width:24%!important}
+.fashion-flower{display:block;width:64px;height:72px;object-fit:contain;flex-shrink:0}
+.fashion-award-gift{position:absolute;z-index:22;top:32%;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px;width:max-content;max-width:86%;padding:9px 17px 9px 10px;border:1px solid #e6c080;border-radius:9px;background:linear-gradient(120deg,#fff0c9f5,#e8c995f5);box-shadow:0 6px 24px #38152655;color:#653143;animation:fashion-caption-in .8s both;pointer-events:none}
+.fashion-award-gift::after{content:'';position:absolute;inset:2px;border:12px solid transparent;border-image:url('assets/ui-v8/button-frame.svg') 20 / 12px / 0 stretch;pointer-events:none}
+.fashion-award-gift>.fashion-flower{width:62px;height:68px;object-fit:contain}
+.fashion-gift-copy{min-width:0}
+.fashion-gift-copy>small{display:block;font:600 8px/1.3 var(--sans);letter-spacing:2px;color:#986e42}
+.fashion-gift-copy>strong{display:block;font:700 20px/1.3 var(--serif);margin:3px 0}
+.fashion-gift-copy>span{display:block;font:500 14px/1.3 var(--sans);color:#895e35}
+.fashion-gift-copy>.fashion-gift-amount{font-size:21px;font-weight:700;white-space:nowrap}
+.fashion-award-gift>.fashion-gift-chest{width:52px;height:58px;object-fit:contain;flex-shrink:0}
+.fashion-motion-paused .fashion-award-person{animation-play-state:paused!important}
+.fashion-flower-collection{margin:22px 0}
+.fashion-flower-collection h3{font:700 23px var(--serif);color:#773846}
+.fashion-flower-collection>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.fashion-flower-collection article{display:flex;align-items:center;gap:6px;padding:9px;border:3px double #c5a06c;border-radius:3px;background:#fff1d4}
+.fashion-flower-collection .fashion-flower{width:48px;height:58px}
+.fashion-flower-collection strong{display:block;font:700 16px var(--serif);color:#773846}
+.fashion-flower-collection small{display:block;font-size:10px;line-height:1.5;color:#916b48;margin-top:4px}
+/* Keep the walking recipient above both waiting rows for the whole approach. */
+@keyframes fashion-award-approach{from{left:var(--from-x);bottom:var(--from-bottom);height:var(--from-height);width:24%}to{left:50%;bottom:22%;height:20%;width:28%}}
+@keyframes fashion-award-leave{0%{left:50%;opacity:1}80%{opacity:1}100%{left:125%;opacity:0}}
+@keyframes fashion-award-gather{from{left:var(--start-x);bottom:var(--start-bottom);height:17%}to{left:var(--line-x);bottom:42%;height:17%}}
+@media(max-height:680px){.fashion-ceremony .fashion-cg-heading{top:15px}.fashion-ceremony .fashion-cg-dialogue{font-size:13px;line-height:1.4;top:13%;max-height:18%}.fashion-award-gift{top:35%;padding:6px 11px 6px 7px;gap:7px}.fashion-award-gift>.fashion-flower{width:46px;height:52px}.fashion-gift-copy>strong{font-size:18px}.fashion-gift-copy>.fashion-gift-amount{font-size:20px}.fashion-award-gift>.fashion-gift-chest{width:42px;height:46px}}
+@media(max-width:350px){.fashion-cg .fashion-award-person figcaption{font-size:7px}.fashion-gift-copy>strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.fashion-cg .fashion-award-person,.fashion-ceremony .fashion-cg-dialogue p,.fashion-award-gift{animation:none!important}.fashion-cg .fashion-award-person.is-depart{left:125%;opacity:0}}
+
+.fashion-ceremony:has(.in-final-line) .fashion-cg-dialogue{max-height:25%}
+
+.fashion-skip{position:absolute;z-index:30;right:16px;bottom:calc(85px + env(safe-area-inset-bottom));min-height:44px;min-width:74px;padding:7px 13px;border:3px double #dfbe7f;border-radius:7px;background:#743540ed;color:#fff1cf;font-weight:700}.fashion-skip small{display:block;font-size:10px;font-weight:400;margin-top:2px}.fashion-skip:disabled{opacity:.5}.fashion-skip-confirm,.fashion-skip-result{text-align:center;padding:22px 8px;color:#674133}.fashion-skip-confirm p,.fashion-skip-result p{line-height:1.65}.fashion-skip-result h2{margin:10px 0 18px}.fashion-skip-result h3{margin:14px 0 5px}.fashion-result-portrait{height:170px;width:140px;margin:auto;border:4px double #b49252;border-radius:75px 75px 12px 12px;overflow:hidden;background:#f3e1b7}.fashion-result-portrait>.character{width:100%;height:100%}.fashion-result-rank{font:700 27px var(--serif);color:#8a3f4b}.fashion-result-prize{display:flex;align-items:center;justify-content:center;gap:12px;border:4px double #c49c5e;background:#f4e1b5;padding:12px;margin:20px 0}.fashion-result-prize strong,.fashion-result-prize span{display:block;margin:5px 0}.fashion-result-prize strong{font:700 23px var(--serif);color:#753545}.fashion-result-prize span{font-weight:700;font-size:20px}.fashion-result-prize>img:not(.fashion-flower){width:60px;height:65px;object-fit:contain}body:has(.fashion-modal)>.test-lab-button{right:auto;left:8px;bottom:calc(90px + env(safe-area-inset-bottom));font-size:10px;padding:7px 9px}body:has(.fashion-skip-confirm)>.test-lab-button{display:none}

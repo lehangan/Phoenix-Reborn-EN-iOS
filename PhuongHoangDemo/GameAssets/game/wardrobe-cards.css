@@ -1,0 +1,44 @@
+/* One native, continuous frame: no stretched button border or arched inner frame. */
+.inventory-grid .wardrobe-card{
+ position:relative;isolation:isolate;overflow:visible;border:1px solid #a67d3f;
+ border-radius:3px;padding:5px 5px 14px;background:#fff8e9;
+ box-shadow:none;text-shadow:none;filter:none;
+}
+.inventory-grid .wardrobe-card::after{content:none!important;border:0!important;border-image:none!important}
+.inventory-grid .wardrobe-card::before{
+ content:'';position:absolute;inset:3px;border:1px solid #dfc99d;border-radius:1px;
+ pointer-events:none;z-index:2;
+}
+.inventory-grid .wardrobe-card>.item-visual{
+ border:0;border-radius:0;background:linear-gradient(180deg,#fcf5e4,#f5e6c5);
+ height:var(--inventory-art-height);flex-basis:var(--inventory-art-height);
+ padding:0 0 23px;overflow:visible;
+}
+.inventory-grid .wardrobe-card .wearable-art>.item-art{padding:24px 7px 21px;filter:none}
+.inventory-grid .wardrobe-card>.item-visual>.pet-art{padding:12px 8px 6px;filter:none}
+.inventory-grid .wardrobe-card.locked .wearable-art>.item-art,
+.inventory-grid .wardrobe-card.locked .pet-art{opacity:.38}
+.inventory-grid .wardrobe-card .wearable-luxury,
+.inventory-grid .wardrobe-card .luxury-score{
+ top:-6px!important;right:-6px!important;width:auto;min-width:26px;padding:3px 4px;
+ border:1px solid #a67d3f;border-radius:0 3px 0 4px;background:#fff8e9;
+ box-shadow:none;color:#723c35;
+}
+.inventory-grid .wardrobe-card .wearable-colors{right:7px;bottom:6px}
+.inventory-grid .wardrobe-card>.item-visual>.item-badge{
+ bottom:0;height:23px;line-height:15px;padding:4px 1px;border:0;border-radius:0;
+ background:var(--quality-color);color:#fffaf0;font-size:10px;font-weight:600;
+ text-shadow:none;letter-spacing:.1px;
+}
+.inventory-grid .wardrobe-card>strong{color:#59372f;margin:10px 6px 5px;font-size:13px;line-height:1.25;min-height:2.5em}
+.inventory-grid .wardrobe-card>.item-bonuses{margin:4px 6px;color:#705b46;line-height:1.4}
+.inventory-grid .wardrobe-card>small{padding:0 6px;margin:6px 0 0;color:#88745b;font-size:10px;line-height:1.4}
+.wardrobe-corners{position:absolute;inset:0;pointer-events:none;z-index:3}
+.wardrobe-corners i{position:absolute;display:block;width:30px;height:30px;background:url('assets/ui-v88/wardrobe-gold-corner.png') center/contain no-repeat}
+.wardrobe-corners i:nth-child(1){top:-2px;left:-2px}
+.wardrobe-corners i:nth-child(2){bottom:-2px;left:-2px;transform:scaleY(-1)}
+.wardrobe-corners i:nth-child(3){bottom:-2px;right:-2px;transform:scale(-1,-1)}
+.inventory-grid .wardrobe-card:focus-visible{outline:2px solid #793c45;outline-offset:3px}
+@media(max-width:350px){.inventory-grid .wardrobe-card>strong{font-size:12px}.wardrobe-corners i{width:26px;height:26px}}
+
+.item-pagination{display:flex;justify-content:center;align-items:center;gap:20px;margin:18px 0 24px;color:#7b4250}.item-pagination button{min-width:48px;min-height:44px;font-size:28px;background:#f5e5c2;border:2px solid #c7a36a;border-radius:8px}.item-pagination button:disabled{opacity:.35}.item-pagination span{min-width:100px;text-align:center;font-size:14px}.inventory-grid{scroll-margin-top:15px}

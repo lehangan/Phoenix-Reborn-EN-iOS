@@ -1,0 +1,2 @@
+/* Shared static art: one decoded image reused by NPC portraits. */
+.npc-floral-portrait.character{background-color:#f4e4c6;background-image:url("assets/v123/kim-lan-floral.webp");background-size:cover;background-position:center;}

@@ -1,0 +1,7 @@
+/* Local, complete Vietnamese glyphs; no split external font subsets. */
+@font-face{font-family:'Cam Tu Serif';font-style:normal;font-weight:100 500;font-display:swap;src:url('assets/fonts/cam-tu-serif-regular-v33.woff') format('woff')}
+@font-face{font-family:'Cam Tu Serif';font-style:normal;font-weight:600 900;font-display:swap;src:url('assets/fonts/cam-tu-serif-bold-v33.woff') format('woff')}
+@font-face{font-family:'Cam Tu Serif';font-style:italic;font-weight:100 500;font-display:swap;src:url('assets/fonts/cam-tu-serif-italic-v33.woff') format('woff')}
+@font-face{font-family:'Cam Tu Sans';font-style:normal;font-weight:100 500;font-display:swap;src:url('assets/fonts/cam-tu-sans-regular-v33.woff') format('woff')}
+@font-face{font-family:'Cam Tu Sans';font-style:normal;font-weight:600 900;font-display:swap;src:url('assets/fonts/cam-tu-sans-bold-v33.woff') format('woff')}
+:root{--serif:"Cam Tu Serif",Georgia,serif;--sans:"Cam Tu Sans",system-ui,sans-serif}

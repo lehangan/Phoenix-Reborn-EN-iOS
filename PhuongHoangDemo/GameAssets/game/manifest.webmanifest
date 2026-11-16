@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "Phoenix Reborn",
+  "short_name": "Phoenix Reborn",
+  "description": "A palace intrigue and fashion game.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#71353a",
+  "background_color": "#f3e4c5",
+  "icons": [
+    {
+      "src": "/game/assets/app-icons/empress-139-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/game/assets/app-icons/empress-139-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

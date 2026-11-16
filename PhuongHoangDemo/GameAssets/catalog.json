@@ -1,0 +1,472 @@
+{
+  "canvas": {
+    "width": 560,
+    "height": 740
+  },
+  "layers": {
+    "base-robe-70-0": {
+      "file": "base-robe-70-0.png",
+      "x": 225,
+      "y": 74,
+      "width": 110,
+      "height": 176
+    },
+    "robe-70": {
+      "file": "robe-70.png",
+      "x": 94,
+      "y": 193,
+      "width": 372,
+      "height": 521
+    },
+    "base-robe-70-3": {
+      "file": "base-robe-70-3.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-70-9": {
+      "file": "base-robe-70-9.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-71-0": {
+      "file": "base-robe-71-0.png",
+      "x": 225,
+      "y": 74,
+      "width": 110,
+      "height": 176
+    },
+    "robe-71": {
+      "file": "robe-71.png",
+      "x": 93,
+      "y": 193,
+      "width": 373,
+      "height": 521
+    },
+    "base-robe-71-3": {
+      "file": "base-robe-71-3.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-71-9": {
+      "file": "base-robe-71-9.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-73-0": {
+      "file": "base-robe-73-0.png",
+      "x": 225,
+      "y": 74,
+      "width": 110,
+      "height": 176
+    },
+    "robe-73": {
+      "file": "robe-73.png",
+      "x": 108,
+      "y": 170,
+      "width": 344,
+      "height": 544
+    },
+    "base-robe-73-3": {
+      "file": "base-robe-73-3.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-73-9": {
+      "file": "base-robe-73-9.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-76-0": {
+      "file": "base-robe-76-0.png",
+      "x": 225,
+      "y": 74,
+      "width": 110,
+      "height": 176
+    },
+    "robe-76": {
+      "file": "robe-76.png",
+      "x": 107,
+      "y": 191,
+      "width": 345,
+      "height": 523
+    },
+    "base-robe-76-3": {
+      "file": "base-robe-76-3.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-76-9": {
+      "file": "base-robe-76-9.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-80-0": {
+      "file": "base-robe-80-0.png",
+      "x": 225,
+      "y": 74,
+      "width": 110,
+      "height": 176
+    },
+    "robe-80": {
+      "file": "robe-80.png",
+      "x": 98,
+      "y": 190,
+      "width": 363,
+      "height": 524
+    },
+    "base-robe-80-3": {
+      "file": "base-robe-80-3.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-80-9": {
+      "file": "base-robe-80-9.png",
+      "x": 228,
+      "y": 74,
+      "width": 104,
+      "height": 166
+    },
+    "base-robe-85-0": {
+      "file": "base-robe-85-0.png",
+      "x": 225,
+      "y": 74,
+      "width": 110,
+      "height": 176
+    },
+    "robe-85": {
+      "file": "robe-85.png",
+      "x": 105,
+      "y": 183,
+      "width": 346,
+      "height": 531
+    },
+    "base-robe-85-3": {
+      "file": "base-robe-85-3.png",
+      "x": 239,
+      "y": 74,
+      "width": 81,
+      "height": 166
+    },
+    "base-robe-85-9": {
+      "file": "base-robe-85-9.png",
+      "x": 239,
+      "y": 74,
+      "width": 81,
+      "height": 166
+    },
+    "front-0": {
+      "file": "front-0.png",
+      "x": 223,
+      "y": 66,
+      "width": 112,
+      "height": 124
+    },
+    "hair-70-0": {
+      "file": "hair-70-0.png",
+      "x": 201,
+      "y": 42,
+      "width": 158,
+      "height": 78
+    },
+    "hair-72-0": {
+      "file": "hair-72-0.png",
+      "x": 183,
+      "y": 40,
+      "width": 194,
+      "height": 166
+    },
+    "hair-76-0": {
+      "file": "hair-76-0.png",
+      "x": 184,
+      "y": 8,
+      "width": 192,
+      "height": 176
+    },
+    "hair-81-0": {
+      "file": "hair-81-0.png",
+      "x": 219,
+      "y": 32,
+      "width": 122,
+      "height": 60
+    },
+    "hair-84-0": {
+      "file": "hair-84-0.png",
+      "x": 233,
+      "y": 62,
+      "width": 97,
+      "height": 45
+    },
+    "hair-90-0": {
+      "file": "hair-90-0.png",
+      "x": 226,
+      "y": 22,
+      "width": 109,
+      "height": 77
+    },
+    "front-3": {
+      "file": "front-3.png",
+      "x": 230,
+      "y": 28,
+      "width": 97,
+      "height": 123
+    },
+    "hair-70-3": {
+      "file": "hair-70-3.png",
+      "x": 201,
+      "y": 42,
+      "width": 158,
+      "height": 78
+    },
+    "hair-72-3": {
+      "file": "hair-72-3.png",
+      "x": 200,
+      "y": 36,
+      "width": 160,
+      "height": 136
+    },
+    "hair-76-3": {
+      "file": "hair-76-3.png",
+      "x": 201,
+      "y": 24,
+      "width": 158,
+      "height": 145
+    },
+    "hair-81-3": {
+      "file": "hair-81-3.png",
+      "x": 227,
+      "y": 31,
+      "width": 107,
+      "height": 49
+    },
+    "hair-84-3": {
+      "file": "hair-84-3.png",
+      "x": 239,
+      "y": 57,
+      "width": 82,
+      "height": 39
+    },
+    "hair-90-3": {
+      "file": "hair-90-3.png",
+      "x": 233,
+      "y": 23,
+      "width": 95,
+      "height": 67
+    },
+    "front-9": {
+      "file": "front-9.png",
+      "x": 234,
+      "y": 27,
+      "width": 89,
+      "height": 154
+    },
+    "hair-70-9": {
+      "file": "hair-70-9.png",
+      "x": 201,
+      "y": 42,
+      "width": 158,
+      "height": 78
+    },
+    "hair-72-9": {
+      "file": "hair-72-9.png",
+      "x": 200,
+      "y": 36,
+      "width": 160,
+      "height": 136
+    },
+    "hair-76-9": {
+      "file": "hair-76-9.png",
+      "x": 201,
+      "y": 24,
+      "width": 158,
+      "height": 145
+    },
+    "hair-81-9": {
+      "file": "hair-81-9.png",
+      "x": 227,
+      "y": 29,
+      "width": 107,
+      "height": 49
+    },
+    "hair-84-9": {
+      "file": "hair-84-9.png",
+      "x": 239,
+      "y": 55,
+      "width": 82,
+      "height": 39
+    },
+    "hair-90-9": {
+      "file": "hair-90-9.png",
+      "x": 233,
+      "y": 21,
+      "width": 95,
+      "height": 67
+    }
+  },
+  "items": [
+    {
+      "id": "robe-70",
+      "type": "robe",
+      "name": "Cửu Thiên Phụng Bào",
+      "rarity": 3,
+      "luxury": 100
+    },
+    {
+      "id": "robe-71",
+      "type": "robe",
+      "name": "Bích Sa Phi Thiên",
+      "rarity": 1,
+      "luxury": 42
+    },
+    {
+      "id": "robe-73",
+      "type": "robe",
+      "name": "Lưu Ly Nguyệt Ảnh",
+      "rarity": 2,
+      "luxury": 65
+    },
+    {
+      "id": "robe-76",
+      "type": "robe",
+      "name": "Tử Hà Thiên Y",
+      "rarity": 2,
+      "luxury": 64
+    },
+    {
+      "id": "robe-80",
+      "type": "robe",
+      "name": "Hoàng Kim Liên Hoa",
+      "rarity": 3,
+      "luxury": 85
+    },
+    {
+      "id": "robe-85",
+      "type": "robe",
+      "name": "Thiên Trúc Liên Y",
+      "rarity": 2,
+      "luxury": 72
+    },
+    {
+      "id": "hair-70",
+      "type": "hair",
+      "name": "Cửu Phụng Minh Châu Quan",
+      "rarity": 3,
+      "luxury": 100
+    },
+    {
+      "id": "hair-72",
+      "type": "hair",
+      "name": "Bích Ngọc Sa Quan",
+      "rarity": 3,
+      "luxury": 81
+    },
+    {
+      "id": "hair-76",
+      "type": "hair",
+      "name": "Nhật Luân Kim Sa",
+      "rarity": 3,
+      "luxury": 96
+    },
+    {
+      "id": "hair-81",
+      "type": "hair",
+      "name": "Xích Kim Hỏa Liên",
+      "rarity": 3,
+      "luxury": 85
+    },
+    {
+      "id": "hair-84",
+      "type": "hair",
+      "name": "Nhật Diệu Bảo Luân",
+      "rarity": 3,
+      "luxury": 79
+    },
+    {
+      "id": "hair-90",
+      "type": "hair",
+      "name": "Đôn Hoàng Thiên Bảo",
+      "rarity": 3,
+      "luxury": 100
+    },
+    {
+      "id": "pet-0",
+      "type": "pet",
+      "name": "Bạch Thố",
+      "rarity": 0,
+      "luxury": 12
+    },
+    {
+      "id": "pet-3",
+      "type": "pet",
+      "name": "Tuyết Miêu",
+      "rarity": 0,
+      "luxury": 12
+    },
+    {
+      "id": "pet-7",
+      "type": "pet",
+      "name": "Kim Khuyển",
+      "rarity": 0,
+      "luxury": 12
+    },
+    {
+      "id": "pet-17",
+      "type": "pet",
+      "name": "Đan Đỉnh Hạc",
+      "rarity": 2,
+      "luxury": 62
+    },
+    {
+      "id": "pet-35",
+      "type": "pet",
+      "name": "Lưu Ly Khổng Tước",
+      "rarity": 2,
+      "luxury": 68
+    },
+    {
+      "id": "pet-49",
+      "type": "pet",
+      "name": "Ngọc Long Thiên Vũ",
+      "rarity": 3,
+      "luxury": 96
+    },
+    {
+      "id": "front-0",
+      "name": "Song Kế",
+      "type": "front",
+      "rarity": 1,
+      "luxury": 0
+    },
+    {
+      "id": "front-3",
+      "name": "Vân Cao",
+      "type": "front",
+      "rarity": 1,
+      "luxury": 0
+    },
+    {
+      "id": "front-9",
+      "name": "Bách Hợp",
+      "type": "front",
+      "rarity": 1,
+      "luxury": 0
+    }
+  ]
+}

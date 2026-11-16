@@ -1,0 +1,36 @@
+.modal.night-modal:has(.imperial-night){height:min(calc(var(--modal-viewport-height,100dvh) - 24px),850px);background:#48151c}
+.night-modal:has(.imperial-night)>.modal-content{display:flex;flex:1;padding:0!important;overflow:hidden;min-height:0}
+.imperial-night{width:100%;height:100%;min-height:0;display:flex;flex-direction:column}
+.night-scene{position:relative;isolation:isolate;flex:1;overflow:hidden;min-height:0;background:#401819}
+.night-room{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+/* A fixed full-body rig keeps height consistent across narrow and wide robes. */
+.night-player{position:absolute;z-index:2;left:20%;top:36%;width:40%;height:42%;opacity:0;transform:translateY(-60%)}
+.night-player>.character{width:100%;height:100%;background:transparent!important}
+.night-emperor{position:absolute;z-index:3;left:43%;bottom:5%;width:36%;height:49%;object-fit:contain;object-position:bottom;transform:scale(1.08);transform-origin:center bottom}
+.night-curtain{position:absolute;z-index:5;inset:0 auto 0 0;width:50.2%;overflow:hidden;transform:translateX(-88%)}
+.night-curtain>img{position:absolute;inset:0 auto 0 0;width:200%;height:100%;object-fit:fill;max-width:none}
+.night-curtain-right{left:auto;right:0;transform:translateX(88%)}
+.night-curtain-right>img{left:-100%}
+.night-seal{position:absolute;z-index:4;top:11px;left:12px;right:12px;text-align:center;color:#ffe3ad;font-size:9px;letter-spacing:1.3px;text-shadow:0 2px 3px #160508}
+.night-loading{position:absolute;z-index:8;inset:0;display:grid;place-content:center;background:#42151c;color:#ffe7b6;font:15px var(--serif)}
+.night-running .night-loading{display:none}
+.night-hearts{position:absolute;inset:0;z-index:7;pointer-events:none;overflow:hidden}
+.night-hearts>i{position:absolute;left:var(--heart-x);bottom:17%;width:var(--heart-size);height:var(--heart-size);opacity:0;filter:drop-shadow(0 0 6px #ff86c8) drop-shadow(0 0 14px #ff50aa)}
+.night-hearts svg{display:block;width:100%;height:100%;fill:#ffbedf;stroke:#fff0f9;stroke-width:.7}
+.night-caption{position:absolute;z-index:8;left:7%;right:7%;top:39%;margin:0;text-align:center;color:#fff1dd;font:600 clamp(19px,5.5vw,26px)/1.65 var(--serif);text-shadow:0 2px 7px #48031e,0 0 20px #fff3;opacity:0}
+.night-modal:has(.imperial-night)>.modal-actions{background:linear-gradient(#631524,#3e101b);border-top-color:#d6ad65}
+.night-modal:has(.imperial-night)>.modal-actions>button{color:#ffe2ad;background:#6c1e2d;border-color:#cca25e;min-height:44px}
+.night-running .night-player{animation:night-enter 2.8s ease-out forwards}
+.night-running .night-curtain-left{animation:night-close-left 1.8s 3.2s ease-in-out forwards}
+.night-running .night-curtain-right{animation:night-close-right 1.8s 3.2s ease-in-out forwards}
+.night-running .night-hearts>i{animation:night-heart 3.1s calc(5s + var(--heart-delay)) ease-out infinite}
+.night-running .night-caption{animation:night-caption 1s 5.4s ease-out forwards}
+.night-paused *{animation-play-state:paused!important}
+@keyframes night-enter{from{opacity:0;transform:translateY(-60%) scale(.8)}25%{opacity:1}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes night-close-left{to{transform:translateX(0)}}
+@keyframes night-close-right{to{transform:translateX(0)}}
+@keyframes night-heart{0%{opacity:0;transform:translate(0,20px) scale(.6)}18%{opacity:1}85%{opacity:.7}100%{opacity:0;transform:translate(var(--heart-drift),-240px) scale(1.2)}}
+@keyframes night-caption{to{opacity:1}}
+.night-reduced .night-player,.night-reduced .night-curtain,.night-reduced .night-caption{animation:none!important;opacity:1;transform:none}
+.night-reduced .night-hearts>i{animation:none!important;opacity:.6;bottom:22%}
+@media(max-height:460px){.night-player{left:26%;width:29%;height:56%;top:25%}.night-emperor{left:48%;height:66%;width:26%}.night-caption{top:32%;font-size:19px}}

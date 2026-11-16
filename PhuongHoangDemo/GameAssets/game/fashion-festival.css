@@ -1,0 +1,141 @@
+/* Shared garment annotations: luxury top right; two reviewed colors bottom right. */
+.wearable-art{display:block;position:relative;width:100%;min-width:0}.wearable-art>.item-art{display:block}.wearable-badges{position:absolute;inset:0;pointer-events:none;text-align:right}.wearable-luxury{position:absolute;right:5px;top:5px;display:flex;flex-direction:column;align-items:center;min-width:30px;padding:3px 5px;background:#fff2d8f5;border:1px solid #b99258;border-radius:5px;color:#793a3e;box-shadow:0 2px 5px #65422522}.wearable-luxury small{font:600 9px/1.1 var(--sans,Arial)!important;margin:0!important;color:inherit!important}.wearable-luxury b{font:700 18px/1.2 var(--serif);letter-spacing:0}.wearable-colors{position:absolute;bottom:6px;right:4px;display:flex;flex-direction:column;align-items:flex-end;gap:3px}.wearable-color{display:flex;align-items:center;gap:4px;padding:2px 5px;background:#fff5dff5;color:#594033;font:600 10px/1.3 var(--sans,Arial);border:1px solid #c8ab7b;border-radius:4px;white-space:nowrap;box-shadow:0 1px 4px #67432c18}.wearable-color i,.fashion-requirements i{display:inline-block;flex:none;width:10px;height:10px;border-radius:50%;background:var(--swatch);border:1px solid #58452e66}.item-card .wearable-art{padding-bottom:22px}.item-card .wearable-colors{bottom:25px}.item-card .wearable-art>.item-art{padding-right:16px}.item-card.locked .wearable-badges{opacity:1}.release-reopen{text-align:center;font-size:13px;line-height:1.6;color:#8a5542;margin:14px 0 6px}
+.fashion-modal{width:min(96vw,550px)!important}.fashion-modal .modal-content{padding:14px!important}.fashion-heading{text-align:center;margin:2px 0 12px}.fashion-heading small,.fashion-winner-heading small{font-size:10px;letter-spacing:1.4px;color:#956a36;font-weight:700}.fashion-heading h2{font:700 clamp(24px,6vw,30px)/1.1 var(--serif);color:#793845;margin:7px 0 10px}.fashion-invitation{text-align:center}.fashion-invite-art{height:215px;border:3px double #bf934e;overflow:hidden}.fashion-invite-art img{width:100%;height:100%;object-fit:cover;object-position:center 29%}.fashion-invite-copy{font:18px/1.6 var(--serif);color:#783c41;margin:16px 0}.fashion-loan-note{font-size:13px;line-height:1.7;background:#fff1cfb0;border:1px solid #cba369;padding:12px}.fashion-theme{padding:12px;border:1px solid #b68c50;background:linear-gradient(120deg,#fff6df,#ecd7ad);border-radius:8px;margin-bottom:10px}.fashion-theme>span{font-size:9px;letter-spacing:1.5px;color:#956e3b}.fashion-theme h3{font:700 23px var(--serif);color:#7c3943;margin:4px 0 9px}.fashion-requirements p{display:flex;align-items:center;gap:5px;font-size:12px;margin:6px 0}.fashion-requirements strong{margin-left:auto;white-space:nowrap}.met{color:#30674c!important}.unmet{color:#a03e40!important}.fashion-fitting{height:238px;display:grid;grid-template-columns:56% 44%;border:3px double #c4a065;background:radial-gradient(ellipse at 30% 50%,#fff8dd,#ead2a9);overflow:hidden}.fashion-fitting>div{height:100%;min-width:0}.fashion-fitting .character{width:100%!important;height:100%!important;display:block;margin:0!important;max-height:none!important;max-width:none!important}.fashion-fitting aside{align-self:center;min-width:0;padding:10px 10px 10px 0}.fashion-fitting aside small{font-size:9px;letter-spacing:.7px;color:#987442}.fashion-fitting h3{font:700 18px/1.3 var(--serif);color:#793b43;margin:10px 0}.fashion-fitting p{font-size:12px;line-height:1.5}.fashion-fit-status{display:block;font-size:12px;line-height:1.4;margin-top:14px}.fashion-wardrobe-note{font-size:11px;line-height:1.6;color:#846146;margin:9px 0}.fashion-wardrobe{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;max-height:280px;overflow-y:auto;overscroll-behavior:contain;padding:3px 1px 6px;scrollbar-width:thin}.fashion-item{position:relative;min-width:0;padding:6px 3px!important;text-align:center;border:1px solid #bc965d!important;border-radius:6px!important;background:#fff2d2!important;color:#683c33!important;box-shadow:none!important}.fashion-item:before,.fashion-item:after{display:none!important}.fashion-item.selected{background:#f6dba4!important;box-shadow:inset 0 0 0 2px #8a3548!important}.fashion-item .item-art{width:100%;height:150px;object-fit:contain}.fashion-jewel .item-art{height:110px}.fashion-item>strong{display:block;font-size:11px;line-height:1.3;margin-top:6px}.fashion-item .wearable-luxury{right:2px;top:1px;min-width:23px;padding:2px}.fashion-item .wearable-luxury b{font-size:15px}.fashion-item .wearable-color{font-size:9px;padding:2px 3px;gap:3px}.fashion-item .wearable-colors{right:1px;bottom:2px}.fashion-no-jewel{display:grid;height:110px;place-items:center;font:30px var(--serif);color:#ab824c}.fashion-scene{position:relative;isolation:isolate;aspect-ratio:2/3;width:100%;max-height:660px;overflow:hidden;border:3px double #b68d4e;background:#dfc48e}.fashion-courtyard{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.fashion-stage-title{position:absolute;left:5%;right:5%;top:4%;z-index:3;text-align:center;color:#fff0bf;text-shadow:0 1px 4px #351b20,0 0 10px #5b2925;font:700 clamp(20px,5vw,29px) var(--serif)}.fashion-person{position:absolute;left:var(--person-x);bottom:var(--person-bottom);height:var(--person-height);width:var(--person-width);transform:translateX(-50%);margin:0!important;z-index:3}.fashion-front-row{z-index:5}.fashion-person>.character{display:block;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0!important;filter:drop-shadow(0 2px 2px #43272344)}.fashion-person figcaption{position:absolute;top:97%;left:50%;transform:translateX(-50%);max-width:85%;width:max-content;text-align:center;color:#fff3cd;background:#632c37ed;border:1px solid #d6af69;padding:3px 5px;border-radius:4px;font-size:9px;line-height:1.35;box-shadow:0 2px 3px #3b272d33}.fashion-person figcaption b{display:block;font-size:8px;color:#ffda7e}.fashion-player figcaption{background:#ffedbd;color:#712f3a;border-color:#aa7339;font-weight:700}.fashion-emperor{position:absolute;z-index:12;bottom:-13%;left:50%;transform:translateX(-50%);height:36%;width:45%;object-fit:contain;filter:drop-shadow(0 3px 4px #44342166)}.fashion-emperor-label{position:absolute;z-index:13;bottom:1%;left:10%;font-size:9px;color:#fff1bf;text-shadow:0 1px 3px #412825}.fashion-speech{border:1px solid #c59c63;border-top:0;padding:12px;background:#fff3d7}.fashion-speech small{font-size:9px;letter-spacing:.5px;color:#9a7040}.fashion-speech p{font:16px/1.55 var(--serif);color:#704436;margin:6px 0 0}.fashion-announcement{text-align:center;font:700 22px/1.5 var(--serif);color:#803c45;margin:25px 0 20px}.fashion-roulette{position:relative;border:4px double #bc8c45;border-radius:80px;background:radial-gradient(ellipse,#fff6d7,#e5c59c);padding:0 22px;margin:20px 0;overflow:hidden;box-shadow:inset 0 0 24px #a67a3b35,0 5px 12px #68452720}.fashion-roulette-window{height:132px;overflow:hidden;mask-image:linear-gradient(transparent,#000 24%,#000 76%,transparent)}.fashion-name-reel{padding-top:44px}.fashion-name-reel>div{height:44px;display:flex;align-items:center;justify-content:center;font:700 clamp(18px,5vw,24px) var(--serif);color:#793842;white-space:nowrap}.fashion-roulette-focus{position:absolute;top:44px;left:18px;right:18px;height:44px;border-top:1px solid #b47c45;border-bottom:1px solid #b47c45;background:#ffdda322;pointer-events:none}.fashion-reel-pointer{position:absolute;top:54px;left:8px;color:#943c3f}.fashion-name-reel{transform:translateY(0)}.is-spinning .fashion-name-reel{animation:fashion-roll 5s cubic-bezier(.08,.6,.12,1) forwards}.reel-paused .fashion-name-reel{animation-play-state:paused}.fashion-draw-status{text-align:center;font-size:13px;color:#956d45}.fashion-contestants{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:24px 0}.fashion-contestants span{border:1px solid #d0af7b;border-radius:5px;padding:8px 5px;font-size:12px;text-align:center;color:#78513f;background:#fff2d666}.fashion-winner-heading{text-align:center;margin:5px 0 14px}.fashion-winner-heading h2{font:700 30px var(--serif);color:#8e3a47;margin:8px 0}.fashion-winner-message{font:18px/1.6 var(--serif);text-align:center;color:#793e43;margin:14px 2px}.fashion-has-winner .fashion-person:not(.fashion-chosen){filter:brightness(.82)}.fashion-person.fashion-chosen{left:50%;bottom:15%;height:var(--person-height);width:var(--person-width);z-index:10;animation:fashion-approach 1.8s ease-in-out both}.fashion-chosen figcaption{background:#ffdf98;color:#7a303c;font-weight:700}.fashion-chosen>.character{filter:drop-shadow(0 0 7px #ffeaaa)}@keyframes fashion-roll{to{transform:translateY(calc(var(--finish-index) * -44px))}}@keyframes fashion-approach{from{left:var(--person-x);bottom:var(--person-bottom)}to{left:50%;bottom:15%}}@media(max-width:350px){.fashion-modal .modal-content{padding:9px!important}.fashion-fitting{height:205px}.fashion-heading h2{font-size:24px}.fashion-theme h3{font-size:20px}.fashion-requirements p{font-size:10px}.fashion-item .item-art{height:125px}.fashion-jewel .item-art{height:100px}.fashion-person figcaption{font-size:8px;padding:2px 3px}.fashion-speech p{font-size:14px}}@media(prefers-reduced-motion:reduce){.is-spinning .fashion-name-reel{animation-duration:.7s}.fashion-person.fashion-chosen{animation:none}}
+
+.fashion-dress-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}.fashion-dress-heading h2{font:700 24px var(--serif);color:#7a3743;margin:4px 0}.fashion-dress-heading small{font-size:9px;color:#936d42;white-space:nowrap}.fashion-dressing .fashion-fitting{height:195px}.fashion-dressing .fashion-theme{padding:9px 11px}.fashion-dressing .fashion-theme h3{font-size:21px;margin:2px 0 6px}.fashion-dressing .fashion-requirements p{margin:4px 0}.fashion-dressing .festival-dress-tabs{margin-top:8px}
+
+.fashion-scene{height:min(54dvh,600px);aspect-ratio:auto}.fashion-heading h2{font-size:25px}.fashion-heading{margin-bottom:10px}.fashion-speech{padding:9px 11px}.fashion-speech p{font-size:15px;line-height:1.5}.fashion-person figcaption{white-space:normal}.fashion-emperor{height:39%;bottom:-14%}
+/* Constrain the new wrapper inside the existing fixed-height inventory artwork. */
+.item-card>.item-visual{padding:0 0 24px;overflow:visible}.item-card .wearable-art{height:100%;padding:0}.item-card .wearable-art>.item-art{height:100%;padding:5px 8px 2px}.item-card .wearable-colors{bottom:3px;right:3px}.item-card .wearable-color{font-size:9px;padding:2px 3px;gap:3px}.item-card .wearable-color i{width:8px;height:8px}.item-card .wearable-luxury{min-width:26px;right:3px;padding:3px}.fitting-item>.wearable-art{height:100%}
+
+/* The festival scene fills the game viewport; narration fades over the CG. */
+.modal-backdrop:has(>.fashion-cg-modal){padding:0}
+.modal-backdrop>.modal.fashion-cg-modal{width:min(100vw,550px)!important;height:100%;max-height:100%;border:0;border-radius:0;background:#38151b;box-shadow:0 0 60px #14090b99}
+.modal.fashion-cg-modal>.modal-top{position:absolute;right:max(8px,env(safe-area-inset-right));top:max(8px,env(safe-area-inset-top));z-index:35;width:42px;height:42px;padding:0;background:none;border:0}
+.fashion-cg-modal>.modal-top>span{display:none}
+.fashion-cg-modal>.modal-top .icon-button{background:#4d202bbd;color:#fff0c9;border:1px solid #dab679;border-radius:50%;box-shadow:0 2px 9px #160a0b66}
+.modal-backdrop .modal.fashion-cg-modal>.modal-content{display:flex;flex:1;min-height:0;padding:0!important;overflow:hidden}
+.fashion-cg{position:relative;width:100%;height:100%;isolation:isolate;overflow:hidden}
+.fashion-cg .fashion-scene{position:absolute;inset:0;width:100%;height:100%;max-height:none;aspect-ratio:auto;border:0}
+.fashion-cg .fashion-stage-title,.fashion-cg .fashion-emperor-label{display:none}
+.fashion-cg .fashion-scene:after{content:'';position:absolute;inset:0;z-index:14;pointer-events:none;background:linear-gradient(#30101bbf,#30101b99 25%,transparent 42%,transparent 85%,#240b1777)}
+.fashion-cg-heading{position:absolute;z-index:20;top:max(27px,env(safe-area-inset-top));left:8%;right:8%;text-align:center;color:#fff0c6;text-shadow:0 2px 6px #300b14;animation:fashion-caption-in 1.3s .15s both}
+.fashion-cg-heading small{font-size:10px;letter-spacing:2px;color:#ffdb91}
+.modal .fashion-cg-heading h2{font:700 clamp(20px,5.8vw,28px)/1.25 var(--serif);margin:9px 0 5px}
+.fashion-cg-heading p{font:16px/1.4 var(--serif);margin:0;color:#ffe0a2}
+.fashion-cg .fashion-back-row{--person-bottom:47%!important;--person-height:24%!important}
+.fashion-cg .fashion-front-row{--person-bottom:20%!important;--person-height:25%!important}
+.fashion-cg .fashion-person figcaption{max-width:95%;font-size:9px;background:#4f2135cc;border-color:#e4c18699;box-shadow:none;padding:3px 4px}
+.fashion-cg .fashion-player figcaption{background:#ffecc5e6;color:#722b3b}
+.fashion-cg .fashion-emperor{bottom:-11%;height:32%;width:45%}
+.fashion-cg-dialogue{position:absolute;z-index:21;top:14%;left:7%;right:7%;text-align:center;color:#fff1dd;text-shadow:0 2px 7px #250910,0 0 18px #30141b;font:600 clamp(15px,4.2vw,20px)/1.6 var(--serif)}
+.fashion-cg-dialogue small{font:600 10px/1.4 var(--sans);letter-spacing:1.6px;color:#ffe0a2;animation:fashion-caption-in .8s both}
+.fashion-cg-dialogue p{margin:7px 0 0}
+.fashion-cg-dialogue p>span{animation:fashion-caption-in 1.2s var(--caption-delay) both}
+.modal.fashion-cg-modal>.modal-actions{position:absolute;z-index:25;bottom:0;left:0;right:0;padding:12px 20px max(14px,env(safe-area-inset-bottom));border:0;background:transparent;box-shadow:none}
+.modal.fashion-cg-modal>.modal-actions>button{min-height:44px;background:#652a3bc7;color:#ffe7b5;border:1px solid #d9ad63;font-size:14px;box-shadow:0 2px 9px #220b1755}
+.fashion-cg .fashion-person.fashion-chosen{bottom:15%;height:var(--person-height);width:var(--person-width);animation-name:fashion-cg-approach}
+.fashion-cg-winner .fashion-cg-dialogue p>span{animation-delay:1.7s}
+@keyframes fashion-caption-in{from{opacity:0}to{opacity:1}}
+@keyframes fashion-cg-approach{from{left:var(--person-x);bottom:var(--person-bottom)}to{left:50%;bottom:15%}}
+@media(max-height:600px){.fashion-cg-heading{top:16px}.modal .fashion-cg-heading h2{font-size:20px;margin:5px 0}.fashion-cg-heading p{font-size:13px}.fashion-cg-dialogue{font-size:13px;line-height:1.4;top:14%;left:5%;right:5%}.fashion-cg .fashion-person figcaption{font-size:8px;padding:2px}.fashion-cg .fashion-front-row{--person-bottom:20%!important;--person-height:22%!important}.fashion-cg .fashion-back-row{--person-bottom:45%!important;--person-height:22%!important}}
+@media(prefers-reduced-motion:reduce){.fashion-cg-heading,.fashion-cg-dialogue small,.fashion-cg-dialogue p>span,.fashion-cg .fashion-person.fashion-chosen{animation:none;opacity:1}}
+
+/* Item detail uses the full character at left and separate text properties. */
+.fitting-properties{margin:10px 0 8px}
+.fitting-properties>.wearable-badges{position:static;display:flex;flex-direction:column;gap:16px;text-align:left}
+.fitting-properties .wearable-luxury{position:static;align-items:flex-start;background:none;border:0;box-shadow:none;padding:0;gap:5px}
+.fitting-properties .wearable-luxury small{font-size:12px!important;font-weight:400!important}
+.fitting-properties .wearable-luxury b{font-size:30px;line-height:1.2}
+.fitting-properties .wearable-colors{position:static;align-items:flex-start;gap:8px}
+.fitting-properties .wearable-color{font-size:11px;line-height:1.45;padding:4px 5px;gap:5px;white-space:normal;max-width:100%;box-sizing:border-box}
+
+/* Compact cards reserve small corners for score and two color dots. */
+.wearable-badges.is-compact .wearable-luxury{min-width:24px;padding:3px;gap:1px;flex-direction:column;border-radius:4px;box-shadow:none}
+.item-card .wearable-badges{z-index:4}
+.item-card .wearable-badges.is-compact .wearable-luxury{top:2px;right:2px}
+.wearable-badges.is-compact .wearable-luxury small{font-size:7px!important;padding:0!important}
+.wearable-badges.is-compact .wearable-luxury b{font-size:12px;line-height:1.2}
+.wearable-badges.is-compact .wearable-colors{flex-direction:row;gap:5px;right:6px;bottom:5px}
+.wearable-badges.is-compact .wearable-color{padding:0;border:0;background:none;box-shadow:none;gap:0}
+.wearable-badges.is-compact .wearable-color i{width:11px;height:11px;border:1px solid #796140;box-shadow:0 0 0 1px #fff1d4}
+.item-card .wearable-art>.item-art{padding:21px 5px 20px}
+.fashion-item .wearable-art>.item-art{padding:19px 2px 20px}
+
+@media(max-height:600px){.fashion-cg-heading{top:12px;left:6%;right:6%}.fashion-cg-heading small{font-size:8px;letter-spacing:1px}.modal .fashion-cg-heading h2{font-size:15px;line-height:1.25;margin:5px 0 3px;padding-right:20px}.fashion-cg-heading p{font-size:12px}}
+
+/* One quality label, with the quality palette on its ribbon. */
+.item-card.rarity-0{--quality-color:#795a3e}
+.item-card.rarity-1{--quality-color:#247a70}
+.item-card.rarity-2{--quality-color:#7d449a}
+.item-card.rarity-3{--quality-color:#ad671a}
+.item-card .item-badge{background:var(--quality-color);color:#fff5df}
+.item-card.locked .item-badge{color:#fff5df}
+
+/* Fixed fitting area, three large choices per page, and fixed action footer. */
+.modal-backdrop>.modal.fashion-dress-modal{height:min(900px,100%)}
+.modal-backdrop .modal.fashion-dress-modal>.modal-content{display:flex;flex:1;min-height:0;overflow:hidden;padding:8px!important}
+.fashion-dressing{display:grid;grid-template-rows:auto minmax(0,1.15fr) minmax(0,1fr);gap:8px;width:100%;height:100%;min-height:0}
+.fashion-dressing .fashion-dress-heading{margin:0;min-height:24px}
+.fashion-dressing .fashion-dress-heading h2{font-size:21px;line-height:1.25;margin:0}
+.fashion-dressing .fashion-dress-heading small{font-size:8px}
+.fashion-dress-preview{display:grid;grid-template-columns:51% 49%;min-height:0;overflow:hidden;border:3px double #c4a065;background:radial-gradient(ellipse at 25% 45%,#fff8e3,#ecd5b0)}
+.fashion-dress-character{min-width:0;min-height:0;height:100%;padding:5px 0}
+.fashion-dress-character>.character{display:block;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0!important}
+.fashion-dress-details{align-self:center;min-width:0;max-height:100%;padding:9px 8px 9px 3px;overflow-y:auto;scrollbar-width:thin}
+.fashion-dressing .fashion-theme{padding:0;margin:0;border:0;background:none;border-radius:0}
+.fashion-dressing .fashion-theme>span{font-size:8px;letter-spacing:1px}
+.fashion-dressing .fashion-theme h3{font-size:19px;line-height:1.25;margin:5px 0 10px}
+.fashion-dressing .fashion-requirements{display:grid;gap:7px}
+.fashion-dressing .fashion-requirements p{display:flex;flex-wrap:wrap;align-items:center;gap:3px 4px;margin:0;font-size:11px;line-height:1.35}
+.fashion-dressing .fashion-requirements strong{flex:0 0 100%;margin:0;font-size:12px}
+.fashion-dressing .fashion-fit-status{font-size:11px;line-height:1.4;margin:9px 0 0}
+.fashion-dressing .fashion-wardrobe-note{font-size:10px;line-height:1.5;margin:8px 0 0;color:#745139}
+.fashion-closet{display:grid;grid-template-rows:36px minmax(0,1fr) 40px;gap:6px;min-height:0}
+.fashion-dressing .festival-dress-tabs{display:flex;gap:7px;margin:0;min-height:0}
+.fashion-dressing .festival-dress-tabs>button{flex:1;min-width:0;min-height:36px;font-size:13px;padding:5px;line-height:1.3}
+.fashion-dressing .fashion-wardrobe{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);gap:6px;max-height:none;min-height:0;overflow:visible;padding:0}
+.fashion-dressing .fashion-item{display:grid;grid-template-rows:minmax(0,1fr) 32px;gap:3px;height:100%;min-height:0;padding:4px!important;margin:0;overflow:hidden}
+.fashion-dressing .fashion-item>.wearable-art{height:100%;min-height:0}
+.fashion-dressing .fashion-item .item-art{height:100%;width:100%;padding:18px 2px 19px}
+.fashion-dressing .fashion-item>strong{align-self:center;margin:0;font-size:11px;line-height:1.4;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.fashion-dressing .fashion-no-jewel{height:100%;min-height:0}
+.fashion-pagination{display:flex;align-items:center;justify-content:center;gap:14px;min-height:0;color:#793a3e;font-size:12px}
+.fashion-pagination>span{min-width:108px;text-align:center}
+.fashion-pagination .fashion-page-arrow{width:44px;height:40px;min-height:0;margin:0;padding:0;border:0;background:none;border-radius:0;box-shadow:none;color:#a52739;font:800 36px/1 var(--sans)}
+.fashion-pagination .fashion-page-arrow:before,.fashion-pagination .fashion-page-arrow:after{display:none}
+.fashion-pagination .fashion-page-arrow:disabled{opacity:.25}
+.fashion-dress-modal>.modal-actions{gap:5px;padding:8px 12px 10px;overflow:visible;max-height:none}
+.fashion-dress-modal>.modal-actions>button{min-height:44px;padding:8px 12px}
+@media(max-height:650px){
+ .fashion-dressing{gap:5px;grid-template-rows:auto minmax(0,1.15fr) minmax(0,1fr)}
+ .fashion-dressing .fashion-dress-heading h2{font-size:18px}
+ .fashion-dress-details{padding:5px 5px 5px 2px}
+ .fashion-dressing .fashion-theme h3{font-size:15px;margin:3px 0 6px}
+ .fashion-dressing .fashion-theme>span{display:none}
+ .fashion-dressing .fashion-requirements{gap:4px}
+ .fashion-dressing .fashion-requirements p,.fashion-dressing .fashion-requirements strong{font-size:10px}
+ .fashion-dressing .fashion-fit-status{font-size:10px;margin-top:5px}
+ .fashion-dressing .fashion-wardrobe-note{font-size:9px;line-height:1.4;margin-top:5px}
+ .fashion-closet{grid-template-rows:32px minmax(0,1fr) 32px;gap:4px}
+ .fashion-dressing .festival-dress-tabs>button{min-height:32px;font-size:12px}
+ .fashion-pagination .fashion-page-arrow{height:32px;font-size:30px}
+ .fashion-dressing .fashion-item{grid-template-rows:minmax(0,1fr) 26px;gap:1px;padding:2px!important}
+ .fashion-dressing .fashion-item>strong{font-size:9px;line-height:1.3}
+ .fashion-dress-modal>.modal-actions{padding:6px 10px 8px;gap:4px}
+}
+
+.fashion-dressing .fashion-color-requirement strong{flex:0 0 auto;margin-left:auto}
+.fashion-dressing .festival-dress-tabs>button.selected{background:linear-gradient(125deg,#8b4249,#562435);color:#ffedc8;font-weight:700}
+@media(min-height:651px){.fashion-dressing .fashion-requirements p,.fashion-dressing .fashion-fit-status{font-size:12px}.fashion-dressing .fashion-wardrobe-note{font-size:11px}}
+
+/* Inventory rows share the same art box; text never vertically centers a card. */
+.inventory-grid{align-items:stretch;--inventory-art-height:150px}
+.inventory-grid .item-card{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;height:100%;padding-top:0;text-shadow:none}
+.inventory-grid .item-card>.item-visual{flex:0 0 var(--inventory-art-height);height:var(--inventory-art-height);width:100%;margin:0;background:linear-gradient(150deg,#e9d8af,#f5e8c8);border-color:#ba955b}
+.inventory-grid .item-card>.item-visual>.item-badge{height:24px;padding:4px 2px;line-height:16px;font-size:10px;font-weight:600;text-shadow:none;filter:none;white-space:nowrap}
+.inventory-grid .item-card>strong{min-height:2.4em;margin:9px 7px 4px;font-size:13px;line-height:1.2;text-shadow:none;overflow-wrap:break-word}
+.inventory-grid .item-card>.item-bonuses{margin:4px 7px;font-size:10px;line-height:1.35;text-shadow:none}
+.inventory-grid .item-card>small{display:block;margin:6px 0 0;padding:0 7px;font-size:11px;line-height:1.3;text-shadow:none;overflow-wrap:break-word}
+@media(max-width:420px){.inventory-grid{--inventory-art-height:146px}}
+@media(max-width:350px){.inventory-grid{--inventory-art-height:125px}.inventory-grid .item-card>strong{font-size:12px}}

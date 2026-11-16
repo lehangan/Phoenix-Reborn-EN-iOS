@@ -1,0 +1,181 @@
+/* Functional layout fixes retained with the original palace theme. */
+.history-card{display:grid!important;grid-template-columns:78px minmax(0,1fr)!important;align-items:start;gap:12px;padding:12px!important;min-width:0;width:100%;max-width:100%;overflow:hidden;background:linear-gradient(130deg,#f6e7cb,#ead3ae);border:1px solid #bb9563;border-radius:12px;box-sizing:border-box}
+.history-card>.npc-avatar{width:78px!important;height:102px!important;min-width:0!important;max-width:78px!important;aspect-ratio:auto;overflow:hidden;border:2px solid #c5a36b;border-radius:38px 38px 9px 9px;background:radial-gradient(#f7ead3,#dfc49a)}
+.history-card .npc-avatar svg{display:block;width:100%!important;height:100%!important;max-width:100%;object-fit:contain}.history-card>div:last-child{min-width:0;overflow-wrap:anywhere}.history-card h3{font-size:17px;line-height:1.35;margin:6px 0}.history-card small{font-size:11px}.history-card p{font-size:12px;margin:3px 0}.history-card .effects{display:flex;flex-wrap:wrap;gap:4px}.history-card .effects span{font-size:10px;white-space:normal;max-width:100%;background:#ead3ae;color:#71353a}
+.history-card small{color:#866b55}
+.quick-stamina{margin-left:auto}
+.fitting-modal{width:min(96vw,480px)!important;height:min(90dvh,790px);max-height:94dvh;display:flex;flex-direction:column;overflow:hidden}
+.fitting-modal .modal-top{flex:none}.fitting-modal .modal-content{padding:5px!important;flex:1;min-height:0;overflow:hidden}
+.fitting-room{height:100%;display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:2px;align-items:stretch}
+.fitting-character{min-width:0;min-height:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse,#fff8e88c,transparent 70%);overflow:hidden}
+.fitting-character>.character{width:100%!important;height:100%!important;max-width:none;max-height:none;display:block}
+.fitting-info{min-width:0;overflow-y:auto;align-self:center;max-height:100%;display:flex;flex-direction:column;gap:9px;padding:9px 6px 9px 2px;color:#78482e}
+.fitting-info h3{font-size:13px;line-height:1.4;margin:0;overflow-wrap:anywhere}.fitting-rarity{font-size:11px;letter-spacing:.5px;color:#9a572c}.fitting-item{height:80px;display:flex;align-items:center;justify-content:center}.fitting-item svg{width:100%;height:100%;object-fit:contain}.fitting-luxury{font-size:11px;margin:0}.fitting-luxury b{display:block;font-size:25px;color:#71353a}.fitting-luxury small{font-size:11px}.fitting-info .effects{display:flex;flex-direction:column;gap:5px;margin:0}.fitting-info .effects span{font-size:11px;padding:5px;white-space:normal}.fitting-source{font-size:10px;line-height:1.5;margin:0}.fitting-info button{font-size:12px;padding:10px 5px;min-height:42px;line-height:1.4}.fitting-info .locked-note{font-size:12px;padding:5px}
+@media(max-width:350px){.fitting-room{grid-template-columns:minmax(0,1fr) 94px}.fitting-info h3{font-size:12px}}
+.exam-reminder{display:flex;align-items:center;justify-content:center;gap:5px;min-height:24px;padding:4px 3px 0;color:#794b35;font-size:11px;line-height:1.35;text-align:center}.exam-reminder>.icon{width:13px;height:13px;flex:none}.exam-reminder-button{background:linear-gradient(#f6e5c7,#e6cba3);border:1px solid #b88b51;color:#71353a;font-weight:700;padding:5px 12px;font-size:11px;min-height:28px}.exam-reminder-button::after{display:none}
+
+/* Rose silk distinguishes imperial invitations and their result receipts. */
+.imperial-backdrop{background:radial-gradient(ellipse at 50% 35%,#a34b7547,#2e102bd9)}
+.modal.imperial-modal{background:linear-gradient(140deg,#fff5f7,#f6d8e6 60%,#edc1d4);border-color:#ecc4a0;box-shadow:0 0 0 4px #b6698e,0 0 0 6px #e4b392,0 18px 60px #30112788}
+.imperial-modal .modal-top{background:linear-gradient(110deg,#9c3f6a,#c87595 52%,#8e365f);color:#fff1dc;border-bottom-color:#dfb78c}
+.imperial-modal .modal-top span{color:#fff1dc}
+.imperial-modal .modal-content{padding:12px 6% 18px}
+.imperial-modal .section-title{padding:27px 0 14px;margin-bottom:8px}
+.imperial-modal .section-title:before{height:25px;width:112px}.imperial-modal .section-title:after{height:16px;width:190px}
+.imperial-modal .section-title h2{font-size:24px;color:#813253;line-height:1.35;margin:4px 0}
+.imperial-modal .section-title .eyebrow{color:#96506a}
+.imperial-modal .story{color:#693c50;font-size:14px;line-height:1.7;margin:10px 0}
+.imperial-modal .choice{background:linear-gradient(#fff0f5,#f2cedd);color:#72334f;border-color:#be8a80}
+.imperial-modal .primary,.imperial-pending{background:linear-gradient(120deg,#9f3c68,#c97094)!important;color:#fff8e7!important}
+.imperial-emperor{display:flex;align-items:center;justify-content:center;gap:13px;margin:0 0 10px}
+.imperial-emperor img{width:58px;height:72px;object-fit:cover;object-position:center 15%;border:3px double #b8875e;border-radius:35px 35px 8px 8px;background:#f4d2df}
+.imperial-emperor>span{color:#914c68;font-size:12px;line-height:1.7}
+.imperial-emperor strong{color:#71334e;font-family:var(--serif);font-size:17px}
+.imperial-modal .affinity-receipt{margin:10px 0;padding:9px 12px;background:linear-gradient(110deg,#f4c2d9,#fff0f5);border-color:#c781a1;color:#783d56}
+.imperial-modal .affinity-receipt strong{color:#9e315c}.imperial-modal .affinity-receipt small{color:#784557}
+.affinity-receipt.affinity-loss{background:linear-gradient(110deg,#f3cbd0,#fff0e8);border-color:#bb7882}.affinity-receipt.affinity-loss strong{color:#a32f48}
+.imperial-details{list-style:none;margin:10px 0 12px;padding:0;display:grid;gap:6px}
+.imperial-details li{padding:8px 10px;border:1px solid #d3a0b5;border-radius:5px;background:#fff5f880;color:#71384f;font-size:13px;line-height:1.5}
+.imperial-modal .effects{margin:8px 0}.imperial-modal .primary{min-height:42px;padding:10px}
+.imperial-modal .reward-list p,.imperial-modal .reward-list h3{color:#71384f}
+.journal-kind-imperial p{color:#a14471}
+/* Family portraits and milestones — compact mobile cards. */
+.relationships .people-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.relationships .people-tabs button{min-width:0;padding:10px 5px;font-size:17px;white-space:nowrap}
+.relationships .people-tabs button span{font-size:12px;margin-left:5px}
+.children-list{display:grid;gap:12px}
+.child-card{display:grid;grid-template-columns:112px minmax(0,1fr);padding:0!important;overflow:hidden;text-align:left;width:100%;border:3px double #bb9155;border-radius:10px;background:linear-gradient(120deg,#e9d5af,#fff5db);box-shadow:0 3px 8px #70412218;min-height:146px}
+.child-card:before,.child-card:after{display:none!important}
+.child-card>img{width:112px;height:100%;min-height:146px;object-fit:cover;object-position:center;border-right:1px solid #bb9155}
+.child-info{min-width:0;display:flex;flex-direction:column;padding:11px 12px;gap:6px;color:#71543d;font-size:12px;line-height:1.4}
+.child-info strong{font-family:var(--serif);font-size:20px;color:#793c44;line-height:1.3}
+.child-info .child-title{font-size:12px;color:#966f36;letter-spacing:.06em}
+.child-info small{font-size:12px;line-height:1.5}.child-open{font-size:11px;color:#93583f;margin-top:auto}
+.crown-child{border-color:#ba8237;background:linear-gradient(120deg,#efc883,#fff4cf)}
+.family-pregnancy{display:flex;gap:10px;padding:13px;border:1px solid #c68ca2;border-radius:8px;background:#f5dae5;color:#7d435a;font-size:12px;line-height:1.6}
+.family-pregnancy div{display:grid;gap:5px}.family-pregnancy .icon{flex:none;width:23px}
+.child-profile{text-align:center}.child-portrait-large{display:block;max-width:100%;width:230px;height:230px;object-fit:cover;margin:4px auto 14px;border:4px double #ba975d;border-radius:80px 80px 15px 15px}
+.child-profile h2{font-size:25px;margin:5px 0;color:#793c44}.child-profile>p{margin:8px 0}
+.aptitude-ordinary{--aptitude-color:#655c50}
+.aptitude-promising{--aptitude-color:#306740}
+.aptitude-outstanding{--aptitude-color:#285c92}
+.aptitude-exceptional{--aptitude-color:#82408e}
+.aptitude-genius{--aptitude-color:#925009}
+.child-name{color:var(--aptitude-color);font-weight:700}
+.child-aptitude{align-self:flex-start;display:inline-block;color:var(--aptitude-color);font-size:12px;font-weight:600;line-height:1.5;border:1px solid currentColor;border-radius:5px;padding:2px 7px;background:#fff9e7}
+.child-profile>.child-aptitude{margin:4px 0 2px}
+.child-name.aptitude-genius{text-shadow:0 1px #ffefb4}
+.child-stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;margin:16px 0}
+.child-stages span{padding:7px 2px;background:#e5d5b5;color:#816d54;font-size:11px;border-bottom:2px solid #cab88e}
+.child-stages .current{background:#803f48;color:#fff0d4;border-color:#d0a45e}.child-stages .passed{background:#d8c393}
+.child-timeline{list-style:none;padding:0;text-align:left}.child-timeline li{display:flex;justify-content:space-between;gap:12px;border-left:2px solid #b08a52;padding:8px 12px;color:#74543d;font-size:13px}.child-timeline span{font-size:12px}
+.reward-list .family-notice{align-items:center}.family-notice-avatar{width:85px;height:100px;object-fit:cover;border:3px double #b38b52;border-radius:40px 40px 6px 6px;flex:none}
+@media(max-width:360px){.child-card{grid-template-columns:96px minmax(0,1fr)}.child-card>img{width:96px}.child-info{padding:9px}.child-info strong{font-size:18px}.relationships .people-tabs button{font-size:15px}}
+
+/* Round face portraits: square frame, fixed face crop, no stretched bust. */
+.identity .character{width:43px;height:43px;aspect-ratio:1;flex:none;border-radius:50%;overflow:hidden}
+.intro-summary .intro-portrait{width:80px;height:80px;aspect-ratio:1;flex:none;border-radius:50%;overflow:hidden;margin:0}
+.intro-summary .intro-portrait>.character{display:block;width:100%;height:100%}
+.intro-summary>div:last-child{min-width:0;overflow-wrap:anywhere}
+@media(max-width:350px){.identity .character{width:35px;height:35px}.intro-summary .intro-portrait{width:72px;height:72px}}
+
+/* Embroidery remains beside the character; the monthly row gains reputation. */
+.home .rail-stat{position:relative}
+.home .stage-embroidery{position:absolute;right:calc(100% + 5px);bottom:-1px;display:grid;place-items:center;width:48px;height:48px;min-height:48px;padding:0;border:0;border-radius:50%;background:transparent;color:#ffe2a1;z-index:5;cursor:pointer}
+.home .stage-embroidery::before,.home .stage-embroidery::after{display:none!important}
+.home .stage-embroidery img{display:block;width:48px;height:48px;object-fit:contain;pointer-events:none;filter:drop-shadow(0 1px 2px #38221d80)}
+.home .stage-embroidery:hover:not(:disabled) img{filter:brightness(1.08) drop-shadow(0 1px 2px #38221d80)}
+.home .stage-embroidery:active:not(:disabled){transform:translateY(1px)}
+.home .stage-embroidery:focus-visible{outline:2px solid #ffe2a1;outline-offset:1px}
+.home .stage-embroidery:disabled{opacity:.45;cursor:default}
+
+/* V28: the same compact mobile layout, inside a secluded, ruined courtyard. */
+.home.cold-palace .stage{background-image:linear-gradient(0deg,rgba(37,33,30,.18),transparent 55%),url('assets/cold-palace-v28.webp');background-position:center;background-size:cover}
+.home.cold-palace .stage-label{background:linear-gradient(135deg,#4e4846,#353c3d);border-color:#b3a380}
+.home.cold-palace .rail-stat{background:linear-gradient(140deg,#5b514d,#414747);border-color:#aa9976}
+.home.cold-palace .stage-caption{background:#eee4cc;color:#4d4840;border-color:#a89777}
+.home.cold-palace .activity-grid{grid-template-columns:repeat(7,minmax(0,1fr))}
+.home.cold-palace .quick-activities{background:linear-gradient(#ede2ca,#d9cbb1)}
+.home.cold-palace .exam-reminder{color:#635846}
+.cold-note{background:#e4dbc5;border-color:#a2967c;color:#554d43}
+.bottom-nav .nav-button:disabled{opacity:.45;filter:grayscale(.7);cursor:not-allowed}
+
+.home.cold-palace{height:auto;min-height:100%}
+.home.cold-palace .stage{min-height:250px}
+@media(max-width:360px){.home.cold-palace .stage{min-height:230px}}
+
+/* V29: the proposer keeps his current-life portrait, framed in rose silk. */
+.proposal-backdrop{background:radial-gradient(ellipse at 50% 40%,#b55e7c55,#301b31e8)}
+.modal.proposal-modal{background:linear-gradient(145deg,#fff5f4,#f9d7e2 65%,#edbccf)}
+.proposal-modal .section-title{padding:22px 0 12px;margin-bottom:0}
+.proposal-modal .section-title h2{font-size:25px}
+.proposal-modal .section-title:after{display:none}
+.proposal-portrait{margin:4px -4px 12px;padding:10px 0 8px;text-align:center;border-radius:12px;background:linear-gradient(0deg,#f9d7e2,transparent 24%),url('assets/proposal-silk-v29.webp') center/cover no-repeat}
+.proposal-portrait>img{display:block;width:144px;height:180px;object-fit:cover;object-position:center 18%;margin:auto;border:3px double #dfb289;border-radius:48% 48% 12px 12px;box-shadow:0 5px 16px #71364e35;background:#eecad6}
+.proposal-portrait figcaption{display:flex;flex-direction:column;gap:2px;margin:8px 0 0;color:#71344e}
+.proposal-portrait figcaption span{font-size:12px}.proposal-portrait figcaption strong{font:700 21px var(--serif);line-height:1.3}
+.proposal-modal .story{margin:8px 0 13px}.proposal-modal .choices{gap:9px}
+.proposal-modal .choice{min-height:45px;padding:11px 12px;font-size:14px;font-weight:600}
+.proposal-modal .choice[data-id="marry"]{background:linear-gradient(120deg,#a84470,#c36b90);color:#fff5df}
+@media(max-width:360px),(max-height:650px){.proposal-portrait>img{width:112px;height:140px}.proposal-portrait figcaption strong{font-size:19px}.proposal-modal .section-title h2{font-size:22px}.proposal-modal .story{font-size:13px}.proposal-modal .choice{font-size:13px}}
+.home{overflow-y:auto}.home .stage{min-height:250px;flex-shrink:0}
+.home .stage-pet{position:absolute;left:17.5%;bottom:8%;width:19.2%;height:23.2%;object-fit:contain;object-position:center bottom;z-index:1;pointer-events:none;filter:drop-shadow(0 3px 3px #38221d35)}
+.home .hero{z-index:2}.home .stage-label{z-index:4}
+.item-art.pet-art{object-fit:contain;width:100%;height:100%;padding:8px}
+.treasure-chest{display:block;object-fit:contain;width:110px;height:100px;max-width:100%;margin:auto}
+.chest-card>.treasure-chest{width:75px;height:80px}.reward-list .treasure-chest{width:95px;height:95px;flex:none}
+.pet-preview{height:340px;position:relative;overflow:hidden;background:radial-gradient(ellipse,#dbc99c66,transparent 72%)}
+.pet-preview>.character{position:absolute;width:80%;height:100%;z-index:2;left:25%}.pet-preview-animal{position:absolute;width:32%;height:35.2%;object-fit:contain;object-position:center bottom;bottom:5%;left:0;z-index:1}
+.decree-garment{height:170px;display:flex;justify-content:center}.decree-garment .item-art{height:100%;max-width:100%}
+.caro-modal{width:min(96vw,480px)!important}.caro-modal .modal-content{padding:15px 4%!important}
+.caro-heading{display:flex;gap:13px;align-items:center}.caro-heading img{width:64px;height:80px;object-fit:cover;border:3px double #b79151;border-radius:30px 30px 6px 6px}.caro-heading h2{font-size:24px;margin:5px 0;color:#733742}.caro-heading p{font-size:12px;margin:0}.caro-heading .eyebrow{font-size:10px;letter-spacing:1px}
+.caro-rules{font-size:13px;text-align:center;line-height:1.7;margin:12px 0}.caro-status{text-align:center;font-weight:700;color:#783641;font-size:16px;margin:8px}
+.caro-board{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));width:100%;aspect-ratio:1;padding:4px;border:4px double #94703d;border-radius:4px;background:linear-gradient(135deg,#f5d9a5,#e0b879);box-shadow:inset 0 0 12px #7b512b25;touch-action:manipulation}
+.caro-board .caro-cell{display:grid;place-items:center;padding:0!important;min-width:0;min-height:0;aspect-ratio:1;border:0!important;border-right:1px solid #a7835066!important;border-bottom:1px solid #a7835066!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;font-family:Arial,sans-serif;font-size:24px;font-weight:700;line-height:1;opacity:1!important;text-shadow:none!important}
+.caro-cell:before,.caro-cell:after{display:none!important}.caro-cell:focus-visible{outline:2px solid #713947;outline-offset:-2px}.caro-x{color:#933c50!important}.caro-o{color:#315d72!important}.caro-board .caro-cell.winning{background:#f8f0ac!important}.caro-board .caro-cell.last-move{box-shadow:inset 0 0 0 2px #916e3b!important}
+.caro-prize{display:flex;align-items:center;justify-content:center;gap:10px}.caro-prize .treasure-chest{width:78px;height:70px;margin:0}.caro-prize p{font-size:13px}.caro-modal .footnote{margin:10px 0}
+@media(max-width:360px){.caro-heading h2{font-size:21px}.caro-board .caro-cell{font-size:21px}.pet-preview{height:290px}}
+
+/* Pets stand on the left and look outward; their faces stay clear of the robe. */
+.home .stage-pet,.pet-preview-animal{transform:none;transform-origin:center}
+
+/* A larger portrait and pastel name ribbon balance the compact controls on the right. */
+.topbar{height:auto;min-height:100px;padding:8px 3%;gap:8px;align-items:center}
+.topbar>.identity{height:auto;align-items:center;gap:8px;text-align:left}
+.topbar>.identity .character{align-self:center;width:clamp(52px,15cqw,64px);height:clamp(52px,15cqw,64px);margin:0;border:2px solid #f0d59c;border-radius:50%;box-shadow:0 0 0 2px #ad7d4f,0 3px 8px #27131c66}
+.topbar .identity-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0;gap:3px}
+.topbar .game-name{font:600 clamp(10.5px,3cqw,12.5px)/1.3 var(--sans);letter-spacing:.15px;color:#ffe4a7;white-space:normal}
+.topbar .game-name>span{white-space:nowrap}
+.topbar .identity .life-number{margin:0;font:600 clamp(10px,2.9cqw,12px)/1.2 var(--sans);letter-spacing:1px;color:#fce6ba}
+.topbar .identity .character-name{display:block;box-sizing:border-box;max-width:100%;margin:1px 0;padding:3px 9px 4px;border:1px solid #ffe8d780;border-radius:4px 12px 12px 4px;background:linear-gradient(100deg,#f4d8de,#e8dced);box-shadow:0 2px 4px #2d162330;color:#603747;font:600 clamp(12px,3.4cqw,14px)/1.35 var(--serif);letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar .identity .character-status{margin:0;font:400 clamp(8.5px,2.5cqw,10.5px)/1.4 var(--sans);color:#f2dcc0;white-space:normal}
+/* Primary controls sit together; currency and music stay quiet beneath them. */
+.header-actions{flex:none;width:max-content;min-width:86px;display:flex;flex-direction:column;gap:7px;align-self:center}
+.header-buttons{display:flex;justify-content:flex-end;gap:8px}
+.topbar .header-buttons button{position:relative;display:grid;place-items:center;flex:none;width:38px;min-width:38px;height:38px;min-height:38px;padding:5px;border:2px solid #f5d591;border-radius:10px;background:linear-gradient(#cb985b,#87512f);box-shadow:inset 0 1px 2px #fff1c3,0 3px 0 #3f1a21,0 4px 7px #24101680;color:#fff5d4}
+.topbar .header-buttons button::before,.topbar .header-buttons button::after{display:none}
+.topbar .header-buttons .icon{width:24px;height:24px;stroke-width:1.8}
+.topbar .point-count{position:absolute;right:-4px;bottom:-5px;min-width:16px;padding:1px 4px;border:1px solid #edca8b;border-radius:7px;background:#71353a;color:#fff3cf;font:700 10px/1.3 var(--sans);font-variant-numeric:tabular-nums;box-shadow:0 1px 3px #30151c66}
+.topbar .header-wallet{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:8px;font-size:11px;line-height:1.2}
+.topbar .header-wallet>span{display:flex;flex:none;align-items:center;justify-content:flex-end;gap:6px;white-space:nowrap;overflow-wrap:normal;color:#ffe9aa;font-size:16px;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums;text-shadow:0 1px 1px #35111e,0 0 5px #f2b63830}
+.topbar .header-wallet>span .icon{flex:none;width:22px;height:22px;padding:1px;border:1px solid #ffe8a2;border-radius:50%;background:linear-gradient(145deg,#fff2a2 5%,#f8d75b 35%,#e5a522 68%,#ba7310);color:#8e540c;stroke-width:1.5;box-shadow:inset 1px 2px 2px #fff8c8,inset -1px -2px 2px #a85c0f99,0 2px 0 #925015,0 3px 5px #25101b99;filter:drop-shadow(0 0 2px #ffdb6866)}
+.topbar .header-wallet .music-toggle{position:relative;display:grid;place-items:center;flex:none;width:26px;min-width:26px;height:26px;min-height:26px;padding:0;border:1px solid #e2bd7d80;border-radius:7px;background:#f5d59114;box-shadow:none;color:#ffe9b5;font:20px/1 var(--serif)}
+.topbar .header-wallet .music-toggle::before,.topbar .header-wallet .music-toggle::after{display:none}
+.topbar .header-wallet .music-toggle.music-off::after{content:'';display:block;position:absolute;width:20px;height:2px;left:2px;top:11px;background:#ffe9b5;transform:rotate(-45deg);border:0;box-shadow:0 0 2px #5a2e29}
+.topbar .header-actions button:focus-visible{outline:2px solid white;outline-offset:3px}
+@media(max-width:350px){.topbar{gap:6px;padding:8px 2.5%}.topbar>.identity{gap:6px}.header-actions{min-width:78px}.header-buttons{gap:6px}.topbar .header-wallet{gap:6px;font-size:10px}.topbar .header-wallet>span{gap:5px;font-size:15px}.topbar .header-buttons button{width:36px;min-width:36px;height:36px;min-height:36px}.topbar .identity .character-name{padding-left:7px;padding-right:7px}}
+.desktop-brand h1{font-size:48px;line-height:1.3}
+/* Compact side tiles leave more of the character and companion visible. */
+.home .stat-rail{width:14.5%;bottom:auto;height:54%;min-height:144px;max-height:174px;gap:3px}
+.home .rail-stat{padding:0;border-width:2px}.home .rail-stat span{font-size:9px;line-height:1.2}.home .rail-stat b{font-size:17px;line-height:1;margin-top:2px}
+
+.male-affinity-note{margin:6px 0 12px;text-align:center;color:#92745c;font-size:11px;line-height:1.5}
+
+.child-adopted{font-weight:600;color:#8b6240;font-size:11px}
+
+.dowry-panel{text-align:center;padding:12px 8px}.dowry-panel>h2{font-size:24px;margin:10px 0 20px}.dowry-panel .story{font-size:16px;line-height:1.65}.dowry-gift{display:grid;place-items:center;width:min(220px,70%);margin:18px auto;background:radial-gradient(ellipse,#fdf3d3,transparent 70%)}.dowry-gift svg{display:block;width:100%;height:210px}.dowry-panel h3{font-size:22px;margin:12px 0}.dowry-panel .footnote{font-size:12px;line-height:1.5}
+@media(max-width:360px),(max-height:650px){.dowry-panel{padding:0 4px}.dowry-panel>h2{font-size:20px;margin:6px 0 12px}.dowry-panel .story{font-size:14px;line-height:1.55}.dowry-gift{margin:10px auto}.dowry-gift svg{height:140px}.dowry-panel h3{font-size:18px;margin:10px 0}}
+
+.dowry-gift .treasure-chest{width:100%;max-width:200px;height:auto;object-fit:contain}
+.dowry-panel .dowry-silver{font-size:26px;font-weight:700;color:#a66a25;margin:8px 0 14px}
+@media(max-height:650px){.dowry-gift .treasure-chest{max-width:140px}}

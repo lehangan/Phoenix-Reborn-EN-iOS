@@ -1,0 +1,34 @@
+.guqin-modal{width:min(96vw,520px);max-height:96dvh}
+.guqin-modal .modal-content{padding:15px 16px 18px}
+.qin-heading{text-align:center;margin:0 0 10px}
+.qin-heading .eyebrow{font-size:10px;letter-spacing:.16em}
+.qin-heading h2{font-family:var(--serif);font-size:26px;margin:2px 0;color:#7a3547}
+.qin-heading p{margin:0;font-size:12px;color:#8a6850}
+.qin-hud{display:flex;align-items:center;justify-content:space-between;gap:7px;padding:8px 10px;background:linear-gradient(110deg,#592536,#883d49);border:1px solid #c39c52;border-radius:9px 9px 0 0;color:#ffedbb;font-size:11px;font-weight:600}
+.qin-hud b{font-size:23px;font-variant-numeric:tabular-nums;margin:0 3px}.qin-hud small{font-size:11px}
+.guqin-modal button.qin-small{padding:5px 8px;min-height:32px;min-width:35px;border:1px solid #d2ae67;border-radius:6px;background:#ffffff10;box-shadow:none;color:#fff2cc;font:600 12px system-ui}
+.guqin-modal button.qin-small::before,.guqin-modal button.qin-small::after{display:none}
+.qin-stage{position:relative;isolation:isolate;aspect-ratio:2/3;width:100%;max-height:min(63dvh,570px);min-height:310px;overflow:hidden;border:2px solid #bc9255;border-top:0;background:#341017;touch-action:none;user-select:none;-webkit-user-select:none}
+.qin-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;pointer-events:none}
+.qin-targets{position:absolute;left:4%;right:4%;top:13%;height:49%}
+.guqin-modal button.qin-note{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:translate(-50%,-50%);width:58px;height:58px;min-height:0;padding:0;border:2px solid #ffe6a1;border-radius:50%;background:radial-gradient(circle at 34% 24%,#ffecab,#c17b24 65%,#713c22);box-shadow:0 0 12px #eeb35b50,inset 0 0 0 3px #fff0bc66;color:#53211d;font-family:system-ui;cursor:pointer;touch-action:none;overflow:visible;transition:none}
+.guqin-modal button.qin-note::before,.guqin-modal button.qin-note::after{display:none}
+.qin-note b{font-size:25px;line-height:1}.qin-note span{font-size:8px;font-weight:800;letter-spacing:.08em}.qin-note small{position:absolute;bottom:-15px;font:10px system-ui;color:#ffebbd;text-shadow:0 1px 2px black}
+.qin-note .qin-approach{position:absolute;inset:-4px;border:2px solid #ffe2a5;border-radius:50%;transform:scale(var(--approach));opacity:.85;pointer-events:none}
+.guqin-modal button.hold-note{background:radial-gradient(circle at 34% 24%,#ffe1ed,#bc557f 65%,#6b2846);border-color:#ffc1de;color:#50152e}
+.hold-note .qin-approach{border-color:#ffaaca}.qin-hold-progress{display:none;position:absolute;inset:-7px;border-radius:50%;background:conic-gradient(#ffe0ed var(--held),#79253d55 0);mask:radial-gradient(transparent 60%,#000 63%);pointer-events:none}
+.holding .qin-hold-progress{display:block}.holding .qin-approach{display:none}.qin-note.on-beat{filter:brightness(1.22)}
+.qin-feedback{position:absolute;top:5%;left:8%;right:8%;text-align:center;font:600 13px system-ui;color:#ffedca;text-shadow:0 2px 4px #240e0c;pointer-events:none}
+.qin-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px;background:#210b17a8;z-index:5;touch-action:pan-y}
+.qin-overlay[hidden]{display:none}
+.qin-instructions{max-width:330px;text-align:center;color:#fff0ce;background:linear-gradient(140deg,#71343ded,#341b2aed);border:1px solid #d2ad68;outline:1px solid #d2ad6855;outline-offset:4px;border-radius:18px;padding:18px 16px;box-shadow:0 6px 24px #16091455}
+.qin-emblem{font:38px Georgia;color:#ffd79a}.qin-instructions h3{font:700 22px var(--serif);margin:4px 0 12px;color:#ffedc3}.qin-instructions p{font-size:13px;line-height:1.65;margin:8px 0 12px}.qin-instructions small{display:block;font-size:10px;line-height:1.5;opacity:.8;margin-top:10px}.qin-instructions .qin-key-help{font-size:10px;opacity:.85}
+.qin-instructions button{min-height:44px;font-size:15px}.qin-song-seal{position:absolute;bottom:3%;left:0;right:0;text-align:center;letter-spacing:.23em;font-size:9px;color:#f0c482;pointer-events:none}.qin-song-seal span{padding:0 10px}
+.qin-hint{display:flex;justify-content:space-between;font-size:12px;color:#795340;margin:8px 0}.qin-rewards{font-size:12px;color:#795340}.qin-rewards summary{cursor:pointer}.qin-rewards p{font-size:12px;line-height:1.8;margin:6px 0}
+.qin-result{text-align:center}.qin-result>h2{font:700 29px var(--serif);color:#783647;margin:10px 0 4px}.qin-result>p{font-size:13px;color:#8a6850;margin:5px 0}
+.qin-stars{display:flex;gap:6px;justify-content:center;margin:12px 0 5px;font-size:38px;color:#b6a38a}.qin-stars .lit{color:#d3912b;text-shadow:0 1px #fff2b7,0 2px 5px #bd7e2925}
+.qin-final-score{font:700 40px var(--serif);color:#7c3545}.qin-final-score small{font:13px system-ui;margin-left:5px}.qin-result .qin-tally{font-size:11px;margin-bottom:15px}
+.qin-emperor{display:flex;align-items:center;gap:13px;text-align:left;border-block:1px solid #c9a46d;padding:14px 0;margin:10px 0 12px}.qin-emperor img{width:76px;height:100px;object-fit:cover;border:2px solid #bc985c;border-radius:8px}.qin-emperor small{color:#9a7349;font-size:11px}.qin-emperor p{font:16px/1.6 var(--serif);margin:4px 0;color:#713e37}
+.qin-prize{display:grid;justify-items:center;gap:3px;margin-bottom:18px;color:#7b3c3d}.qin-prize img{width:130px;max-height:110px;object-fit:contain}.qin-prize span{font-size:11px}.qin-loss{color:#a3444f!important;margin:12px!important}
+@media(max-height:700px){.guqin-modal .modal-content{padding:10px 12px}.qin-heading h2{font-size:22px}.qin-stage{max-height:56dvh;min-height:300px}.qin-instructions{padding:12px}.qin-emblem{font-size:25px}.qin-instructions h3{font-size:19px}.qin-instructions p{margin:6px 0}.qin-instructions .qin-key-help{display:none}.qin-heading p{display:none}}
+@media(max-width:350px){.guqin-modal button.qin-note{width:50px;height:50px}.qin-instructions{padding:12px}.qin-instructions h3{font-size:19px}.qin-instructions p{font-size:12px}.qin-stars{font-size:31px}}

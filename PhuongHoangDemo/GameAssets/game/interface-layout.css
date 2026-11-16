@@ -1,0 +1,86 @@
+/* Shared compact headings for every page and dialog. */
+#app .section-title,
+#modal-root .section-title {
+  padding: 0;
+  margin: 0 0 12px;
+}
+#app .section-title::before,
+#app .section-title::after,
+#modal-root .section-title::before,
+#modal-root .section-title::after {
+  content: none;
+  display: none;
+}
+#app .section-title > .eyebrow,
+#modal-root .section-title > .eyebrow,
+.intro-footer {
+  display: none;
+}
+#app .section-title h2,
+#modal-root .section-title h2 {
+  margin: 0 0 4px;
+}
+#app .section-title p,
+#modal-root .section-title p {
+  margin: 4px 0 0;
+}
+.content:not(.map-content) {
+  padding-top: 12px;
+}
+#app .map-content .section-title {
+  margin-bottom: 4px;
+}
+.palace-map {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+}
+/* Keep the whole illustrated map and its percentage-positioned locations together. */
+.map-illustration {
+  object-fit: fill;
+}
+.map-place {
+  width: 26%;
+  max-width: 112px;
+}
+.male-affinity-note {
+  margin: 10px 0 14px;
+  color: #753840;
+  font-size: clamp(13px, 3.6cqw, 16px);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Keep the original center strip clear of the shop label on the right. */
+.stage-footer {
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: 8px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.stage-footer > .stage-caption {
+  position: static;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 8px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
+}
+.stage-statuses { flex: 0 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.stage-footer > .stage-caption > span { white-space: nowrap; }
+.stage-footer > .pending-button {
+  width: 100%;
+  min-height: 35px;
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 11px;
+  background: linear-gradient(#8c4448, #552637);
+  color: #ffedc7;
+}

@@ -1,0 +1,152 @@
+/* One viewport-bound shell for every popup, including Safari's expanded bars. */
+:root{--modal-viewport-height:100vh;--modal-viewport-top:0px}
+@supports(height:100dvh){:root{--modal-viewport-height:100dvh}}
+.modal-backdrop{inset:auto 0;top:var(--modal-viewport-top);height:var(--modal-viewport-height);box-sizing:border-box;padding:max(10px,env(safe-area-inset-top)) max(9px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(9px,env(safe-area-inset-left));overflow:hidden}
+.modal-backdrop>.modal{display:flex;flex-direction:column;width:min(100%,500px)!important;max-height:100%;min-height:0;overflow:hidden;box-sizing:border-box;animation:modal-appear .18s ease-out}
+@keyframes modal-appear{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.modal-backdrop>.modal{animation:none}}
+.modal>.modal-top{position:relative;flex:0 0 44px;height:44px;min-height:44px;padding:0 8px}
+.modal-top>span{font-size:9px;letter-spacing:.4px;padding-right:5px;line-height:1.3}
+.modal-top .icon-button{width:40px;height:40px;flex:none}
+.modal-backdrop .modal>.modal-content{flex:0 1 auto;min-height:0;max-height:none;padding:10px 14px 12px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scroll-padding:8px}
+.modal.has-modal-actions>.modal-content{min-height:48px}
+.modal>.modal-actions{position:relative;z-index:3;flex:0 0 auto;display:grid;gap:6px;max-height:45%;overflow-y:auto;overscroll-behavior:contain;padding:9px 14px 12px;border-top:1px solid #c7a36b;background:linear-gradient(#f5e7cd,#ecd5b4);box-shadow:0 -3px 9px #80613d12}
+.modal>.modal-actions>button,.modal>.modal-actions>a{width:100%;margin:0!important;min-height:44px;padding:10px 12px;font-size:13px;line-height:1.4;white-space:normal}
+.modal>.modal-actions>button strong{font-size:13px;line-height:1.4}
+.modal>.modal-actions>button small{font-size:11px;line-height:1.3;margin-top:2px}
+.modal>.modal-actions.many-actions{grid-template-columns:repeat(2,minmax(0,1fr));max-height:45%}
+.modal .section-title{padding:23px 0 16px;margin:0 0 8px}
+.modal .section-title:before{height:21px;width:100px}
+.modal .section-title:after{height:12px;width:170px}
+.modal .section-title h2{font-size:22px;line-height:1.3;margin:5px 0}
+.modal .section-title>.eyebrow{font-size:9px;line-height:1.4;letter-spacing:1px}
+.modal .section-title p{font-size:12px;line-height:1.45;margin:5px 0}
+.modal .story{font-size:14px;line-height:1.6;margin:9px 0}
+.modal .footnote{font-size:11px;line-height:1.45;margin:8px 0}
+.modal .tip{font-size:12px;line-height:1.5;padding:9px;margin:8px 0}
+.modal .result-icon{height:26px;width:26px;margin:0 auto 3px}
+.modal .effects{margin:7px 0}
+.modal .proposal-portrait{display:flex;align-items:center;gap:14px;padding:10px 14px;margin:5px 0 10px;text-align:left}
+.modal .proposal-portrait>img{width:88px;height:110px;margin:0;flex:none;border-width:2px}
+.modal .proposal-portrait figcaption{margin:0;min-width:0;gap:5px}
+.modal .proposal-portrait figcaption span{font-size:11px;line-height:1.4}
+.modal .proposal-portrait figcaption strong{font-size:19px;line-height:1.35}
+.modal .dialogue-bubble{padding:9px 12px}
+.modal .dialogue-bubble p{font-size:14px;line-height:1.55}
+.modal .conversation-portrait{height:100px;width:84px;margin-bottom:4px}
+.modal .conversation-speaker{margin:4px 0 7px}
+.modal .affinity-receipt{margin:7px 0;padding:7px 10px}
+.modal .decree-scroll{padding:10px 8px}
+/* Keep adoption text inside the scroll's paper, clear of its rollers and edges. */
+.modal .adoption-scroll{box-sizing:border-box;min-width:0;padding:50px 12% 50px!important;overflow-wrap:anywhere}
+.modal .adoption-scroll .imperial-seal{width:30px;height:30px;margin:0 auto 10px}
+.modal .adoption-scroll>h2.center{font-size:clamp(17px,4.5vw,20px);line-height:1.3;margin:6px 0 10px}
+.modal .adoption-scroll .story{font-size:12px;line-height:1.5;margin:8px 0;text-align:left}
+.modal .adoption-scroll .adoption-portrait{display:block;width:96px;height:96px;max-width:100%;object-fit:cover;margin:10px auto;border:3px double #b38b52;border-radius:50%}
+.modal .adoption-scroll .adoption-child-title{font-size:12px;font-weight:700;line-height:1.4;margin:7px 0}
+.modal .adoption-scroll .decree-title{font-size:24px!important;line-height:1.25;letter-spacing:0;padding:7px 0;margin:8px 0}
+.modal .adoption-scroll .child-aptitude{font-size:11px;line-height:1.3}
+.modal .adoption-scroll .footnote{font-size:10px;line-height:1.4;margin:7px 0 0}
+.modal .decree-garment{height:140px;margin:7px auto}
+.modal .loot-art,.modal .shop-receipt-art{height:160px;max-height:27dvh;object-fit:contain;margin:7px auto}
+.modal .guide-list{font-size:13px;line-height:1.65;margin-top:8px}
+.modal .guide-list li{margin-bottom:9px;padding-bottom:9px}
+.modal input:not([type=range]),.modal select{font-size:16px}
+/* The wardrobe is the only scrolling part while choosing event clothing. */
+.modal-backdrop .modal:has(.event-outfit-panel){height:min(760px,100%);max-height:100%}
+.modal-backdrop .modal:has(.event-outfit-panel)>.modal-content{display:flex;flex:1;overflow:hidden;padding:9px!important}
+.modal-backdrop .modal:has(.pet-detail){height:min(600px,100%)}
+.modal .event-outfit-panel .festival-fitting,.modal .event-outfit-panel .ceremony-dressing-look{flex-basis:150px;height:150px;min-height:70px;max-height:22dvh}
+.modal .event-outfit-panel .festival-letter,.modal .event-outfit-panel.ceremony-invitation>p{font-size:13px;line-height:1.5;margin:7px 2px}
+.modal .pet-detail .pet-solo{flex-basis:150px;min-height:110px;margin-bottom:6px}
+.modal .pet-detail .pet-quality{font-size:24px}
+.modal-backdrop .fitting-modal:has(.fitting-room){height:min(650px,100%)}
+.modal-backdrop .fitting-modal:has(.fitting-room)>.modal-content{flex:1;overflow-y:auto;padding:7px!important}
+.modal .fitting-room{height:100%;min-height:260px}
+.modal .fitting-info{padding:10px 7px;overflow-y:auto;min-height:0}
+.modal .fitting-info h3{font-size:19px;line-height:1.35;margin:7px 0}
+.modal .fitting-item{height:85px}
+.modal .fitting-source{font-size:12px;line-height:1.5}
+.modal .fitting-luxury{margin:7px 0;font-size:12px}
+.modal .fitting-luxury b{font-size:28px}
+.modal .coronation-decree{padding:15px 10px}
+.modal .coronation-decree h2{font-size:24px;margin:10px 0}
+.modal .coronation-decree p{font-size:14px;line-height:1.6;margin:8px 0}
+.modal .coronation-token{height:145px;max-height:24dvh}
+.modal .coronation-scene{height:min(62dvh,520px);min-height:240px}
+.modal .lake-trip .lake-scene{height:clamp(170px,35dvh,330px)}
+.modal .lake-reward .lake-scene{height:clamp(135px,25dvh,230px)}
+.modal .lake-dialogue{font-size:14px;line-height:1.5;margin:9px 0}
+.modal .qin-heading h2,.modal .qin-result h2{font-size:22px}
+.modal .qin-stage{min-height:260px;max-height:min(56dvh,500px)}
+.modal .qin-result{padding:8px 4px}
+.modal .qin-stars{margin:7px 0;font-size:30px}
+.modal .qin-final-score{font-size:38px}
+.modal .qin-emperor{margin:8px 0;padding:8px}
+.modal .qin-prize{margin:8px 0;padding:8px}
+.modal .painting-reference{gap:9px;margin:7px 0}
+.modal .painting-reference canvas{min-width:80px;width:90px;height:90px}
+.modal .paint-wrap{width:min(100%,38dvh);margin:8px auto}
+.modal .paint-tools{gap:4px;margin:7px 0}
+.modal .paint-tools button{min-height:40px;padding:8px}
+.modal .caro-board{width:min(100%,52dvh);margin:8px auto}
+.modal .memory-grid{width:min(100%,48dvh);margin:8px auto;gap:5px}
+.modal .intro-sheet{padding-bottom:0}
+.modal .intro-bottom-ornament{margin:5px 0;height:15px}
+.modal-backdrop .festival-modal:has(.festival-scene)>.modal-content{flex:1;overflow:hidden}
+.modal .festival-gift-glow{height:150px;margin:8px 0}
+.modal .festival-result>p{font-size:14px;line-height:1.55}
+.modal .festival-return-note{margin:9px 0;padding:9px}
+@media(max-height:620px){
+ .modal .section-title{padding:18px 0 12px;margin-bottom:6px}
+ .modal .section-title:before{height:16px}
+ .modal .section-title:after{height:9px}
+ .modal .section-title h2{font-size:20px;margin:4px 0}
+ .modal .proposal-portrait{gap:10px;padding:7px 10px;margin-bottom:7px}
+ .modal .proposal-portrait>img{width:72px;height:90px}
+ .modal .proposal-portrait figcaption strong{font-size:18px}
+ .modal .story{font-size:13px;line-height:1.5;margin:7px 0}
+ .modal-backdrop .modal>.modal-content{padding:7px 11px 9px}
+ .modal>.modal-actions{padding:7px 11px 9px;gap:5px}
+ .modal .event-outfit-panel .festival-fitting,.modal .event-outfit-panel .ceremony-dressing-look{flex-basis:100px;height:100px}
+}
+@media(max-height:480px){
+ .modal>.modal-actions:has(>button:nth-child(3)){grid-template-columns:repeat(2,minmax(0,1fr));max-height:52%}
+ .modal>.modal-actions>button{padding:7px 9px}
+}
+/* Fishing uses a fixed, large signal and a forgiving reaction bar. */
+.modal .lake-fishing .lake-heading{margin-bottom:5px}
+.modal .lake-fishing .lake-heading h2{font-size:21px;margin:3px 0}
+.modal .fishing-hud{margin-bottom:6px;padding:6px 9px}
+.modal .fishing-hud button{min-width:40px;min-height:40px}
+.modal .fishing-water .lake-scene{height:clamp(150px,28dvh,260px)}
+.modal .fishing-water .lake-background{object-fit:fill}
+.modal .fishing-water .lake-scene-seal{display:none}
+.modal .fishing-float{top:2%;width:36px;height:44px;filter:drop-shadow(0 2px 4px #173c4388)}
+.modal .fishing-float i{left:13px;width:10px;height:29px;border:2px solid #663528}
+.modal .fishing-float b{width:36px;height:12px;bottom:0;border-width:3px}
+.modal .fishing-float.biting{filter:drop-shadow(0 0 9px #ffe554);animation:fish-bite .65s ease-in-out infinite alternate}
+.fishing-signal{flex:none;min-height:76px;padding:9px 10px;margin:0 0 7px;border:2px solid #bca476;border-radius:8px;background:#f9eed8;text-align:center;color:#775b3c}
+.fishing-signal>strong{display:block;font-size:18px;line-height:1.3}
+.modal .fishing-signal .fishing-feedback{display:block;font-size:12px;line-height:1.4;min-height:0;margin:3px 0 0}
+.fishing-window{height:8px;overflow:hidden;border-radius:8px;background:#c4ad8355;margin-top:6px}
+.fishing-window>i{display:block;height:100%;width:0;background:#bb7621;border-radius:inherit}
+.fishing-signal[data-state=bite]{background:#fff1a5;border-color:#c3881e;color:#703e17;box-shadow:0 0 0 2px #ffde6c55}
+.fishing-signal[data-state=receipt]{background:#e4efcf;border-color:#7c9b55;color:#3e642f}
+.fishing-signal[data-state=missed]{background:#f5e1d1;border-color:#ba8b6f;color:#814a34}
+.modal .fishing-overlay{gap:6px;padding:11px}
+.modal .fishing-overlay strong{font-size:18px;line-height:1.3}
+.modal .fishing-overlay p{font-size:12px;line-height:1.4;margin:2px 0}
+.modal .fishing-overlay button{min-height:44px;font-size:13px;margin:3px 0 0;padding:9px}
+.modal .fishing-reel{font-size:17px!important;font-weight:700;min-height:50px!important}
+.modal .fishing-reel:disabled{opacity:1;color:#765e48;background:#e6d7bb;border-color:#b9a481;box-shadow:none}
+.modal .fishing-reel.fish-ready{background:linear-gradient(#ffe99b,#efb83f);color:#67330e;border-color:#a46a12;box-shadow:0 0 0 2px #ffe18c88,0 2px 7px #ad742a55}
+@keyframes fish-bite{from{transform:translate(-50%,2px) scale(1.08)}to{transform:translate(-50%,7px) scale(1.18)}}
+@media(prefers-reduced-motion:reduce){.modal .fishing-float.biting{animation:none}}
+
+/* One out-and-back roller per fishing attempt. */
+.fishing-track{position:relative;height:26px;margin:12px 9px 7px;border:1px solid #8d6245;border-radius:15px;background:linear-gradient(#ad4f54,#763842);box-shadow:inset 0 2px 5px #3b152a66;overflow:visible}
+.fishing-target{position:absolute;top:0;bottom:0;background:linear-gradient(#ffe99a,#edb726);box-shadow:0 0 0 1px #fff1b9}
+.fishing-roller{position:absolute;top:-5px;width:12px;height:34px;border:2px solid #fff2d5;border-radius:7px;background:linear-gradient(90deg,#743a36,#e6b981,#743a36);box-shadow:0 2px 4px #3f201c88;transform:translateX(-50%)}
+.fishing-track[data-active=false]{opacity:.65}
+.injury-portrait{width:150px;height:165px;margin:10px auto;overflow:hidden;border:2px solid #c5a164;border-radius:48% 48% 10px 10px;background:#f7e7bd}.injury-portrait .character{width:100%;height:100%}.injury-lock{text-align:center;color:#9c3044;font-weight:800}

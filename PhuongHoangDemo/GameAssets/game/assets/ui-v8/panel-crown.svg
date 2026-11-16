@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="76" viewBox="0 0 300 76" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="150" y1="5" x2="150" y2="72" gradientUnits="userSpaceOnUse"><stop stop-color="#fff0c5"/><stop offset=".35" stop-color="#d9b778"/><stop offset=".7" stop-color="#b5894b"/><stop offset="1" stop-color="#f7e0a4"/></linearGradient>
+    <linearGradient id="feather" x1="90" y1="26" x2="120" y2="62" gradientUnits="userSpaceOnUse"><stop stop-color="#f7e0a4"/><stop offset="1" stop-color="#c79b58"/></linearGradient>
+  </defs>
+  <g id="wing" stroke="#795027" stroke-width=".7" stroke-linejoin="round">
+    <path d="M140 57C121 60 107 54 99 44C91 34 82 30 70 29C82 22 94 27 104 36C113 44 126 48 140 47Z" fill="url(#feather)"/>
+    <path d="M133 52C107 49 99 21 80 17C99 13 113 25 117 37C121 45 127 48 133 52Z" fill="url(#gold)"/>
+    <path d="M120 45C110 31 114 18 106 9C122 13 126 27 124 37C123 41 124 45 128 49" fill="url(#feather)"/>
+    <path d="M109 46C91 41 80 39 66 44C75 32 92 31 105 39Z" fill="url(#gold)"/>
+    <path d="M113 52C92 44 73 52 60 61C66 44 86 40 102 45Z" fill="url(#feather)"/>
+    <path d="M120 57C101 51 92 56 83 65C86 54 98 48 113 50Z" fill="url(#gold)"/>
+    <path d="M109 37C101 28 94 24 86 21M116 36C116 27 112 20 110 16M103 42C93 37 84 36 75 38M105 48C90 45 78 49 69 55M119 54C108 50 98 54 93 58" stroke="#fff0c5" stroke-width=".9" stroke-linecap="round"/>
+    <path d="M77 60C67 63 54 64 42 58C30 52 20 51 9 57C17 46 32 45 44 51C54 56 67 55 77 51" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M59 47C51 41 39 39 33 46C29 51 34 57 39 54C43 51 40 47 37 49" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M57 40C49 38 45 32 47 27C54 28 58 33 57 40ZM28 60C21 59 18 62 15 66C24 68 29 66 32 62Z" fill="#d9b778"/>
+    <path d="M11 57C13 53 16 51 19 51" stroke="#f7e0a4" stroke-width=".9"/>
+    <path d="M92 67Q111 66 129 70" stroke="#d9b778" stroke-width="1.2" fill="none"/>
+  </g>
+  <use href="#wing" transform="translate(300 0) scale(-1 1)"/>
+  <path d="M150 57C134 46 134 24 150 9C166 24 166 46 150 57Z" fill="url(#gold)" stroke="#795027" stroke-width=".9"/>
+  <path d="M147 58C130 57 119 44 122 28C136 31 147 43 147 58ZM153 58C170 57 181 44 178 28C164 31 153 43 153 58Z" fill="url(#feather)" stroke="#795027" stroke-width=".9"/>
+  <path d="M149 61C134 68 121 60 115 51C130 48 144 52 149 61ZM151 61C166 68 179 60 185 51C170 48 156 52 151 61Z" fill="#d9b778" stroke="#795027" stroke-width=".8"/>
+  <path d="M150 17V51M126 33Q139 44 146 58M174 33Q161 44 154 58M123 55L143 61M177 55L157 61" stroke="#fff0c5" stroke-width="1" stroke-linecap="round"/>
+  <path d="M140 66Q150 73 160 66" stroke="#f7e0a4" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M150 3L153 7L150 11L147 7Z" fill="#f7e0a4" stroke="#795027" stroke-width=".65"/>
+  <circle cx="150" cy="61" r="5" fill="#f7e0a4" stroke="#795027" stroke-width="1"/>
+  <circle cx="150" cy="61" r="2.1" fill="#99733c"/>
+</svg>

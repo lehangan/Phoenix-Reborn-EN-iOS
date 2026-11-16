@@ -1,0 +1,17 @@
+/* The four approved landscapes change with the existing calendar. */
+.home:not(.cold-palace) .stage[data-season]{background-size:cover;background-position:center 58%;background-repeat:no-repeat}
+.home:not(.cold-palace) .stage[data-season=spring]{background-image:url('assets/v109/background/spring.webp')}
+.home:not(.cold-palace) .stage[data-season=summer]{background-image:url('assets/v109/background/summer.webp')}
+.home:not(.cold-palace) .stage[data-season=autumn]{background-image:url('assets/v109/background/autumn.webp')}
+.home:not(.cold-palace) .stage[data-season=winter]{background-image:url('assets/v109/background/winter.webp')}
+.palace-particles{position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none}
+.palace-particles i{position:absolute;left:var(--x);top:-15px;width:var(--size);height:var(--size);opacity:0;animation:palace-season-fall var(--duration) var(--delay) linear infinite}
+[data-season=spring] .palace-particles i{background:#efbdc2;border-radius:70% 10% 65% 40%;width:calc(var(--size)*1.6);height:calc(var(--size)*1.1);box-shadow:inset 1px 1px 0 #fff2e966}
+[data-season=winter] .palace-particles i{border-radius:50%;background:#fff;box-shadow:0 0 2px #ffffff88}
+[data-season=autumn] .palace-particles i{background:#a3472e;width:calc(var(--size)*1.8);clip-path:polygon(0 40%,30% 30%,22% 0,50% 22%,75% 0,70% 36%,100% 45%,67% 70%,50% 100%,33% 70%)}
+[data-season=autumn] .palace-particles i:nth-child(3n){background:#b67937}
+[data-season=summer] .palace-particles i{top:var(--y);width:3px;height:3px;border-radius:50%;background:#f0dda0;box-shadow:0 0 6px 2px #eddb8d66;animation:palace-firefly-drift var(--duration) var(--delay) ease-in-out infinite}
+.home .stage[data-season] :is(.stat-rail,.stage-footer){z-index:4}
+@keyframes palace-season-fall{0%{transform:translate(0,-15px) rotate(0deg);opacity:0}12%{opacity:.65}50%{transform:translate(var(--sway),350px) rotate(150deg);opacity:.8}88%{opacity:.65}100%{transform:translate(calc(var(--sway)*-.5),740px) rotate(300deg);opacity:0}}
+@keyframes palace-firefly-drift{0%,100%{opacity:0;transform:translate(-8px,6px)}30%{opacity:.7}65%{opacity:.25;transform:translate(13px,-18px)}80%{opacity:.6}}
+@media(prefers-reduced-motion:reduce){.palace-particles{display:none!important}}

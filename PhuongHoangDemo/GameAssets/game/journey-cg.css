@@ -1,0 +1,26 @@
+.modal-backdrop:has(>.journey-modal){padding:0}
+.modal-backdrop>.modal.journey-modal{width:min(100vw,550px)!important;height:100%;max-height:100%;border:0;border-radius:0;background:#34291f;box-shadow:0 0 60px #14090b99}
+.modal.journey-modal>.modal-top{position:absolute;right:max(8px,env(safe-area-inset-right));top:max(8px,env(safe-area-inset-top));z-index:35;width:36px;height:36px;padding:0;background:none;border:0}
+.journey-modal>.modal-top>span{display:none}
+.journey-modal>.modal-top>.icon-button{width:36px;height:36px;background-color:#512936bb}
+.modal-backdrop .modal.journey-modal>.modal-content{display:flex;flex:1;min-height:0;padding:0!important;overflow:hidden}
+.modal.journey-modal>.modal-actions{position:absolute;z-index:25;bottom:0;left:0;right:0;padding:10px 18px max(14px,env(safe-area-inset-bottom));border:0;background:linear-gradient(transparent,#23190d80);box-shadow:none}
+.journey-modal>.modal-actions>button{background-color:#763944e8}
+.journey-cg{position:relative;isolation:isolate;width:100%;height:100%;display:grid;place-items:center;overflow:hidden;--journey-progress:0}
+.journey-cg::before{content:'';position:absolute;inset:-15px;background-image:linear-gradient(#39291d44,#39291d44),var(--journey-bg);background-size:cover;background-position:center;filter:blur(10px);z-index:-1}
+.journey-fit{position:relative;flex:none;overflow:hidden}
+.journey-background{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
+.journey-copy{position:absolute;z-index:5;top:0;left:0;right:0;padding:35px 24px 38px;text-align:center;background:linear-gradient(#291810ad,#29181055 76%,transparent);pointer-events:none}
+.journey-copy h2{font:600 clamp(21px,5vw,28px)/1.35 var(--serif);color:#ffe7b0;margin:0 0 12px;text-shadow:0 2px 3px #23170b}
+.journey-copy p{font:500 clamp(15px,3.9vw,19px)/1.6 var(--serif);color:#fff5dd;text-shadow:0 1px 3px #160e08;min-height:4.8em;margin:0}
+.journey-copy .journey-spoken{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.journey-hero{position:absolute;z-index:3;height:28%;width:34%;left:33%;bottom:calc(48% - 17% * var(--journey-progress));pointer-events:none}
+/* Only the outer rig moves; nested sprite viewports retain their size and clipping. */
+.journey-hero > .character{display:block;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;overflow:visible}
+.journey-running:not(.journey-finished) .journey-hero > .character{animation:journey-step .68s ease-in-out infinite}
+.journey-man{position:absolute;z-index:4;height:32%;width:35%;object-fit:contain;bottom:5%;left:32.5%}
+.journey-name{position:absolute;bottom:5.5%;left:20%;right:20%;z-index:5;color:#fff4d5;text-align:center;font:600 13px var(--serif);text-shadow:0 1px 3px #332114}
+.journey-paused .journey-hero > .character{animation-play-state:paused!important}
+@keyframes journey-step{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-1.5px) rotate(.4deg)}}
+@media(max-height:600px){.journey-copy{padding:18px 20px 25px}.journey-copy h2{font-size:20px;margin-bottom:8px}.journey-copy p{font-size:14px;line-height:1.5}}
+@media(prefers-reduced-motion:reduce){.journey-hero > .character{animation:none!important}}
