@@ -351,8 +351,15 @@ case'submit-paint':{const report=gradeDrawing(s.exam.subject,s.exam.strokes);mut
 
 document.addEventListener('change',e=>{if(e.target.id==='rarity-filter'){rarityFilter=e.target.value;resetBagPages();renderBag();}if(e.target.id==='owned'){ownedOnly=e.target.checked;resetBagPages();renderBag();}if(e.target.id==='brush-size')brushWidth=+e.target.value;});
 document.addEventListener('keydown',e=>{if(e.target.closest?.('[role=tablist].people-tabs')&&['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const tabs=['male','female','children'];peopleTab=e.key==='Home'?tabs[0]:e.key==='End'?tabs[2]:tabs[(tabs.indexOf(peopleTab)+(e.key==='ArrowRight'?1:2))%3];render();$('#tab-'+peopleTab)?.focus();return;}if(e.key==='Escape'&&modal){if(modal==='result'){mutate(()=>E.acknowledge(s));}else if(modal==='wishing-pool'){mutate(()=>E.leaveWishingPool(s));}else if(modal==='appearance'){appearanceDraft=null;show('intro');}else{modal=null;renderModal();}}if(e.key==='Tab'&&modal){const nodes=[...$('#modal-root').querySelectorAll('button:not(:disabled),input,select,a[href]')];if(!nodes.length)return;const first=nodes[0],last=nodes.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
-await cloud.bootstrap();
-resume(false,false);render();save();if(loadIssue)toast(loadIssue);
+async function startGame() {
+ await cloud.bootstrap();
+ resume(false,false);render();save();if(loadIssue)toast(loadIssue);
+}
+startGame().catch(error => {
+ console.error('Phoenix Reborn startup failed', error);
+ const message = $('#startup-message');
+ if (message) message.textContent = 'The game could not start. Close and reopen the app to try again.';
+});
 
 function shopPanel(){return renderShop(s,shopState);}
 function supplies(){return `<p class="tip">Quà bánh dùng biếu tặng người trong cung để giảm Đố kỵ. Mỗi lồng thú mở một lần. Dịch Dung đan thay đổi gương mặt ngẫu nhiên, chữa hủy dung; mỗi lần uống dùng 1 viên. Đồ vật chỉ thuộc kiếp hiện tại.</p><div class="supply-list">${E.SHOP_ITEMS.filter(i=>s.p.supplies[i.id]>0).map(i=>`<article class="supply-card"><img src="${i.asset}" alt="${i.name}"><div><h3>${i.name} ×${s.p.supplies[i.id]}</h3><p>${i.description}</p>${button(i.useLabel,'use-supply','primary',`data-id="${i.id}"`)}</div></article>`).join('')||'<div class="empty">Chưa có đồ vật. Ghé Kỳ trân các để chọn một món.</div>'}</div>${!E.inColdPalace(s)?button('Đến Kỳ trân các','shop','subtle full'):''}`;}
@@ -392,7 +399,7 @@ function refreshReleaseIndicators(){
 }
 let checkingRelease=false,lastReleaseCheck=0;
 async function checkRelease(){
- if(checkingRelease||document.hidden||Date.now()-lastReleaseCheck<60000)return;
+ if(location.protocol==='file:'||checkingRelease||document.hidden||Date.now()-lastReleaseCheck<60000)return;
  checkingRelease=true;lastReleaseCheck=Date.now();
  try{const response=await fetch('release.json',{cache:'no-store',credentials:'omit'});if(response.ok&&releases.accept(await response.json())){
   if(modal==='online-updates'){renderModal();releases.markSeen();}

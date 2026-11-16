@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" translate="no" class="notranslate">
 <head>
-  <base href="/game/">
   <meta charset="UTF-8">
   <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -10,13 +9,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Phoenix Reborn">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="manifest" href="/game/manifest.webmanifest?v=139">
-  <link rel="apple-touch-icon" sizes="180x180" href="/game/assets/app-icons/empress-139-180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icons/empress-139-180.png">
   <meta name="description" content="Phoenix Reborn — a palace intrigue and fashion game.">
   <title>Phoenix Reborn · A Dream Within the Imperial City</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="/game/assets/app-icons/empress-139-32.png">
-  <link rel="preload" as="font" type="font/woff" crossorigin href="assets/fonts/cam-tu-sans-regular-v33.woff">
-  <link rel="preload" as="font" type="font/woff" crossorigin href="assets/fonts/cam-tu-serif-regular-v33.woff">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/app-icons/empress-139-32.png">
   <link rel="stylesheet" href="palace-styles.css">
   <link rel="stylesheet" href="palace-layout.css">
   <link rel="stylesheet" href="guqin.css">
@@ -50,9 +46,23 @@
 </head>
 <body>
   <div class="ambient" aria-hidden="true"></div>
-  <main id="app" class="game" aria-label="Phoenix Reborn Game"><p style="margin:auto;padding:30px;text-align:center;font-family:serif">Opening the palace gates…</p></main>
+  <main id="app" class="game" aria-label="Phoenix Reborn Game"><p id="startup-message" style="margin:auto;padding:30px;text-align:center;font-family:serif">Opening the palace gates…</p></main>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <div id="modal-root"></div>
-  <script type="module" src="palace-app.mjs"></script>
+  <script>
+    (() => {
+      const app = document.getElementById('app');
+      const showFailure = () => {
+        if (!app.querySelector('#startup-message')) return;
+        app.querySelector('#startup-message').textContent = 'The game could not start. Close and reopen the app to try again.';
+      };
+      window.addEventListener('error', event => {
+        if (event.target.id === 'ios-game-script' || event instanceof ErrorEvent) showFailure();
+      }, true);
+      window.addEventListener('unhandledrejection', showFailure);
+      setTimeout(showFailure, 15000);
+    })();
+  </script>
+  <script id="ios-game-script" defer src="palace-ios.js"></script>
 </body>
 </html>

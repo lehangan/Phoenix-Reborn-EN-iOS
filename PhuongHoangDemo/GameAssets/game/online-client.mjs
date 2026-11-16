@@ -1,7 +1,7 @@
 import {createRanking} from './ranking-client.mjs';
 export function operationId(){const b=crypto.getRandomValues(new Uint8Array(16));b[6]=(b[6]&15)|64;b[8]=(b[8]&63)|128;const h=Array.from(b,x=>x.toString(16).padStart(2,'0')).join('');return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;}
 export async function api(path,options={}){
- if(location.protocol==='phoenix:'){const e=new Error('Online accounts, cloud saves and rankings are not connected in this offline test build. Your progress is saved on this device.');e.status=503;throw e;}
+ if(location.protocol==='phoenix:'||location.protocol==='file:'){const e=new Error('Online accounts, cloud saves and rankings are not connected in this offline test build. Your progress is saved on this device.');e.status=503;throw e;}
  const response=await fetch('/api'+path,{credentials:'same-origin',cache:'no-store',...options,headers:{...(options.body?{'content-type':'application/json','x-game-request':'1'}:{}),...options.headers},signal:AbortSignal.timeout(20000)});
  const data=await response.json().catch(()=>({error:'Không kết nối được máy chủ.'}));if(!response.ok){const e=new Error(data.error||'Chưa hoàn tất thao tác.');e.status=response.status;throw e;}return data;
 }
